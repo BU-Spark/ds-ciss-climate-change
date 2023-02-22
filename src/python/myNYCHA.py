@@ -1,4 +1,5 @@
 import requests
+from scrape import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -16,12 +17,11 @@ driver.get("https://my.nycha.info/DevPortal/Portal/SelectDevelopment/261")
 devData = driver.find_element(By.LINK_TEXT,'Development Data')
 devData.click()
 
-# navigate to demographics tab
-demographics = driver.find_element(By.XPATH,"//html").get_attribute('outerHTML')
-demographics = driver.find_element(By.LINK_TEXT,'Demographics')
-demographics.click()
-
 # scrape the demographics data
+age_tables = driver.find_element(By.ID,'tab_demographics').find_elements(By.XPATH,".//*") # puts each table in a list
+for table in age_tables:
+    scrape_table(table)
+# print(age_tables[0].get_attribute('outerHTML'))
 
 
 
