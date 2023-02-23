@@ -1,55 +1,58 @@
-import requests
 from scrape import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import csv
+from selenium.webdriver.chrome.options import Options
+import time
+
+NYCHA_URL = "https://my.nycha.info/DevPortal/Portal"
 
 # initialize selenium
-from selenium.webdriver.chrome.options import Options
-chrome_options = Options()
-chrome_options.add_experimental_option("detach", True)
-driver = webdriver.Chrome()
-driver.maximize_window()
+def init():
+    chrome_options = Options()
+    chrome_options.add_experimental_option("detach", True)
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    return driver
 
-# fetch html for single building's portal
-driver.get("https://my.nycha.info/DevPortal/Portal/SelectDevelopment/261")
+def fetch_buildings(driver):
+    driver.get(NYCHA_URL)
+    time.sleep(5)
+    buildings = driver.find_element(By.ID,'DevNum').find_elements(By.XPATH,'.//*') # put all building options in a list
+    return buildings
 
-# navigate to the development data for that building
-devData = driver.find_element(By.LINK_TEXT,'Development Data')
-devData.click()
-
-# scrape the demographics data
-age_tables = driver.find_element(By.ID,'tab_demographics').find_elements(By.XPATH,".//*") # puts each table in a list
-# print(age_tables[0])
-# print(scrape_table(age_tables[0]))
-
-# initialize the csvFile
-csvFile = open('editors.csv', 'wt+')
-writer = csv.writer(csvFile)
-csvRow = ['NYCHA']
-try:
-    writer.writerow(csvRow)
-finally:
-    csvFile.close()
-
-for table in age_tables:
-    scrape_table(table)
-
-input() # so that the window doesn't close
+def __main__():
+    driver = init()
+    buildings = fetch_buildings(driver)
+    for building in buildings:
+        print(building)    
+        building_id = building.get_attribute('value')
+        if building_id:
+            print(building_id)
+            driver.get(NYCHA_URL+"/SelectDevelopment/"+building_id) # navigate to the building's portal
+            time.sleep(5)
+            driver.find_element(By.LINK_TEXT,'Development Data').click() # navigate to dev data for that building
+            demographic_tables = driver.find_element(By.ID,'tab_demographics').find_elements(By.XPATH,".//*") # get demographic and household tables
+            household_tables = driver.find_element(By.ID,'tab_household_income').find_elements(By.XPATH,".//*")
+            tables = demographic_tables+household_tables
+            for table in tables: # scrape each table
+                scrape_table(table)
+            time.sleep(5)
+            
 
 
-# print(age_tables[0].get_attribute('outerHTML'))
-# print(age_tables)
-# scrape_table(age_tables[0])
-# tbl = age_tables[0].get_attribute('outerHTML')
 
-# csvFile = open('editors.csv', 'wt+')
-# writer = csv.writer(csvFile)
-# csvRow = []
-# try:
-#     csvRow.append(tbl)
-#     writer.writerow(csvRow)
-# finally:
-#     csvFile.close()
+# # fetch html for single building's portal
+# driver.get("https://my.nycha.info/DevPortal/Portal/SelectDevelopment/261")
 
+# # navigate to the development data for that building
+# devData = driver.find_element(By.LINK_TEXT,'Development Data')
+# devData.click()
+
+# # scrape the demographics data
+# age_tables = driver.find_element(By.ID,'tab_demographics').find_elements(By.XPATH,".//*") # puts each table in a list
+
+
+# input() # so that the window doesn't close
+
+__main__()
 
