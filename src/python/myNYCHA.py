@@ -7,7 +7,6 @@ import time
 
 NYCHA_URL = "https://my.nycha.info/DevPortal/Portal"
 
-# initialize selenium
 def init():
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
@@ -36,21 +35,5 @@ def __main__():
             for table in tables: # scrape each table
                 scrape_table(table)
             
-
-
-
-# # fetch html for single building's portal
-# driver.get("https://my.nycha.info/DevPortal/Portal/SelectDevelopment/261")
-
-# # navigate to the development data for that building
-# devData = driver.find_element(By.LINK_TEXT,'Development Data')
-# devData.click()
-
-# # scrape the demographics data
-# age_tables = driver.find_element(By.ID,'tab_demographics').find_elements(By.XPATH,".//*") # puts each table in a list
-
-
-# input() # so that the window doesn't close
-
 __main__()
 
