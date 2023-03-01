@@ -1,212 +1,43 @@
-"
 
-Total Population by Age
-
-Age Group
-# of Residents
-Percentage
-
-
-Under 5 years
-79
-7%
-
-
-5 to 9 years
-119
-10%
-
-
-10 to 14 years
-105
-9%
-
-
-15 to 19 years
-128
-11%
-
-
-20 to 24 years
-152
-13%
-
-
-25 to 34 years
-149
-12%
-
-
-35 to 44 years
-131
-11%
-
-
-45 to 54 years
-123
-10%
-
-
-55 to 59 years
-60
-5%
-
-
-60 to 64 years
-43
-4%
-
-
-65 to 74 years
-69
-6%
-
-
-75 to 84 years
-26
-2%
-
-
-85 years and over
-10
-1%
-
-
-
-Household Composition
-Composition
-Households
-Percentage
-
-
-Single Senior only
-49
-11%
-
-
-2+ Seniors only
-9
-2%
-
-
-Single non-senior
-52
-12%
-
-
-Couple, no child(ren)
-9
-2%
-
-
-2 parents + child(ren) <18
-19
-4%
-
-
-2 parents + child(ren)>=18
-11
-2%
-
-
-Single parent + child(ren)<18
-145
-32%
-
-
-Single parent + child(ren)>=18
-83
-18%
-
-
-Single grandparent + child(ren)<18
-28
-6%
-
-
-Single grandparent + child(ren)>=18
-10
-2%
-
-
-Other + child(ren)<18
-16
-4%
-
-
-Other, no child(ren)<18
-18
-4%
-
-
-"
-"
-
-Household Income Source
-
-Income Type
-Households
-Percentage
-
-
-Employment 
-228
-51%
-
-
-Own Business
-1
-0%
-
-
-Unemployment Insurance
-24
-5%
-
-
-Public Assistance
-82
-18%
-
-
-Social Security
-125
-28%
-
-
-SSI
-145
-32%
-
-
-VA Benefits
-3
-1%
-
-
-Pension
-21
-5%
-
-
-Child Support
-22
-5%
-
-
-Other
-8
-2%
-
-
-Non-Verifiable
-19
-4%
-
-
-Non-Verifiable only
-8
-2%
-
-
-"
+Age Group,# of Residents,Percentage
+Under 5 years,79,7%
+5 to 9 years,119,10%
+10 to 14 years,105,9%
+15 to 19 years,128,11%
+20 to 24 years,152,13%
+25 to 34 years,149,12%
+35 to 44 years,131,11%
+45 to 54 years,123,10%
+55 to 59 years,60,5%
+60 to 64 years,43,4%
+65 to 74 years,69,6%
+75 to 84 years,26,2%
+85 years and over,10,1%
+
+Composition,Households,Percentage
+Single Senior only,49,11%
+2+ Seniors only,9,2%
+Single non-senior,52,12%
+"Couple, no child(ren)",9,2%
+2 parents + child(ren) <18,19,4%
+2 parents + child(ren)>=18,11,2%
+Single parent + child(ren)<18,145,32%
+Single parent + child(ren)>=18,83,18%
+Single grandparent + child(ren)<18,28,6%
+Single grandparent + child(ren)>=18,10,2%
+Other + child(ren)<18,16,4%
+"Other, no child(ren)<18",18,4%
+
+Income Type,Households,Percentage
+Employment ,228,51%
+Own Business,1,0%
+Unemployment Insurance,24,5%
+Public Assistance,82,18%
+Social Security,125,28%
+SSI,145,32%
+VA Benefits,3,1%
+Pension,21,5%
+Child Support,22,5%
+Other,8,2%
+Non-Verifiable,19,4%
+Non-Verifiable only,8,2%
