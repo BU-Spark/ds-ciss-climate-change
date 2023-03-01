@@ -20,12 +20,16 @@ devData = driver.find_element(By.LINK_TEXT, 'Development Data')
 devData.click()
 
 # scrape the demographics and income data
+building = '261'
+building_name = soup(driver.page_source, 'html.parser').find('option', {'value': building}).text
 table_demo = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_demographics'})
 table_income = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_household_income'})
 
 csvFile = open('editors.csv', 'wt+')
 writer = csv.writer(csvFile)
-
+title = []
+title.append(building_name)
+writer.writerow(title)
 for tr in table_demo.find_all('tr'):
     data = []
 
