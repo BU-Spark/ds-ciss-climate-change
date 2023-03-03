@@ -2,6 +2,11 @@ from scrape import *
 import selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import csv
+from bs4 import BeautifulSoup as soup
+
+
+# initialize selenium
 from selenium.webdriver.chrome.options import Options
 import time
 

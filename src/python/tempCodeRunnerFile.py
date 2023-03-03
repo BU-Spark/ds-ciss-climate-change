@@ -1,2 +1,3 @@
-tbl = scrape_table(age_tables[0])
-print(tbl)
+nameList = bs.findAll('span', {'class': 'green'})
+# for name in nameList:
+#   print(name.get_text)
