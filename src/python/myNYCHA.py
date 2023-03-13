@@ -21,30 +21,28 @@ devData.click()
 
 # scrape the demographics and income data
 building = '261'
-building_name = soup(driver.page_source, 'html.parser').find('option', {'value': building}).text
-table_demo = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_demographics'})
-table_income = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_household_income'})
+building_name = soup(driver.page_source, 'html.parser').find(
+    'option', {'value': building}).text
+table_demo = soup(driver.page_source, 'html.parser').find(
+    'div', {'id': 'tab_demographics'})
+table_income = soup(driver.page_source, 'html.parser').find(
+    'div', {'id': 'tab_household_income'})
 
-csvFile = open('editors.csv', 'wt+')
+csvFile = open('editors_rows.csv', 'wt+')
 writer = csv.writer(csvFile)
-title = []
-title.append(building_name)
-writer.writerow(title)
-for tr in table_demo.find_all('tr'):
-    data = []
+data = []
+data.append("Building Address")
+data.append(building_name)
+try:
+    for td in table_demo.find_all('td'):
+        data.append(td.text)
 
-    for td in tr.find_all('td'):
+    for td in table_income.find_all('td'):
         data.append(td.text)
     writer.writerow(data)
 
-for tr in table_income.find_all('tr'):
-    data = []
-
-    for td in tr.find_all('td'):
-        data.append(td.text)
-    writer.writerow(data)
-
-csvFile.close()
+finally: 
+    csvFile.close()
 
 
 input()  # so that the window doesn't close
@@ -55,5 +53,18 @@ input()  # so that the window doesn't close
 
 # table_demo = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_demographics'}).text
 # table_income = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_household_income'}).text
-# print(table_demo)
-# print(table_income)
+
+# Export tables to csv in the website table format
+# for tr in table_demo.find_all('tr'):
+#     data = []
+
+#     for td in tr.find_all('td'):
+#         data.append(td.text)
+#     writer.writerow(data)
+
+# for tr in table_income.find_all('tr'):
+#     data = []
+
+#     for td in tr.find_all('td'):
+#         data.append(td.text)
+#     writer.writerow(data)
