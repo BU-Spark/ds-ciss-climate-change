@@ -36,9 +36,18 @@ def analyze_article(article,buildings,driver:webdriver.Chrome):
             stripped_text = re.sub(r'[^\w\s]','',p.text)
             text += " " + stripped_text.lower()
     # check if text contains any of the NYCHA buildings
+    mentioned = []
     for building in buildings:
         if building in text:
-            print(building,"was mentioned")
+            mentioned.append(building)
+    if mentioned:
+        dates = extract_dates(text)
+
+""" extract all mentioned dates in article using regex """
+def extract_dates(text):
+    dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
+    dates += re.findall(r'\d{4}',text)
+    return set(dates)
 
 """ the worker function """
 def __main__():
@@ -62,6 +71,8 @@ def __main__():
 
 """ for specific cases """
 def unit_test():
-    return
-
+    text = "The funding allowed the planning process for elevator replacement to begin in early April. The timeline for elevator replacement work across the 20 different sites is estimated to range from 49 months (Cassidy-Lafayette Houses) to 81 months (Marcy Houses), depending on the number of elevators that need to be replaced and the age of the relevant developments. All elevator construction work is scheduled to be completed by early December 2028."
+    dates = extract_dates(text)
+    print(dates)
+# unit_test()
 __main__()
