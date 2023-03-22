@@ -1,0 +1,28 @@
+url,buildings,dates
+http://nychanow.nyc/celebrating-womens-history-month-2/,"['johnson', 'riis']",{'2000'}
+http://nychanow.nyc/meet-the-coaching-and-mentoring-leadership-academy-participants/,['isaacs'],"{'2020', '1991', '2023'}"
+http://nychanow.nyc/celebrating-social-work-month-meet-marina-oteiza-director-of-family-partnerships/,"['grant', 'tompkins']","{'2014', '1978', '1970'}"
+http://nychanow.nyc/celebrating-womens-history-month-meet-michele-moore-director-of-comprehensive-modernization/,"['moore', 'todt hill']","{'2012', '2021', '2015'}"
+http://nychanow.nyc/celebrating-black-history-month-at-red-hook-houses/,['red hook west'],None
+http://nychanow.nyc/daniel-barber-bhm/,"['clinton', 'jackson']","{'1972', '2018'}"
+http://nychanow.nyc/board-member-raymond-miller-bhm/,"['johnson', 'smith']",{'1984'}
+http://nychanow.nyc/celebrating-black-history-month-8/,['brown'],"{'2020', '2018', '2022', '4000'}"
+http://nychanow.nyc/board-member-james-mckoy-bhm/,['adams'],None
+http://nychanow.nyc/meet-george-gomez-supervisor-of-rees-job-generation/,['sack wern'],"{'2022', '2019'}"
+http://nychanow.nyc/meet-yolanda-brooks-community-associate-in-the-office-of-public-safety-security/,"['taft', 'washington']","{'2011', '2018', '2019', '2001'}"
+http://nychanow.nyc/nycha-and-resident-leaders-select-pact-partners-to-address-85m-in-repair-needs-at-metro-north-plaza-and-gaylord-white-houses/,"['adams', 'johnson', 'metro north plaza', 'robinson', 'white']","{'1988', '2024', '8500', '1893', '8531', '6200', '3610', '2022', '1400'}"
+http://nychanow.nyc/meet-richard-meyers-project-manager-in-asset-capital-management/,"['jackson', 'johnson']","{'1988', '2015', '2019', '1993', '2022'}"
+http://nychanow.nyc/nycha-launches-first-ever-leadership-academy-for-staff/,['woodson'],None
+http://nychanow.nyc/nycha-opens-comp-mod-resident-engagement-office-at-todt-hill-houses-ahead-of-renovations/,"['moore', 'todt hill']","{'2123', '0667', '2024'}"
+http://nychanow.nyc/nychas-capital-projects-roundup-december-january/,"['bushwick', 'farragut', 'gowanus', 'marshall plaza', 'nostrand']","{'2150', '2130', '5510', '3100', '9440'}"
+http://nychanow.nyc/read-healthy-happenings-the-ehs-newsletter/,['brown'],"{'1000', '0777', '2022', '7187'}"
+http://nychanow.nyc/resident-groups-awarded-climate-action-grants-for-community-sustainability-projects/,"['grant', 'mill brook', 'red hook west', 'wagner', 'woodside']","{'2021', '5000'}"
+http://nychanow.nyc/meet-victoria-vasquez-the-voice-of-nycha/,['vladeck'],{'2012'}
+http://nychanow.nyc/nycha-celebrates-key-landmarks-for-sustainability-in-2022/,"['astoria', 'berry', 'carey gardens', 'grant', 'mill brook', 'polo grounds towers', 'red hook west', 'wagner', 'woodside']","{'2021', '2023', '5000', '3000', '2022'}"
+http://nychanow.nyc/two-residents-named-new-members-of-nycha-board/,"['adams', 'albany', 'johnson', 'smith']","{'2011', '2021', '4000', '2019', '1984'}"
+http://nychanow.nyc/nycha-ceo-coo-pix11/,['wald'],None
+http://nychanow.nyc/nycha-and-partners-begin-137m-pact-modernization/,"['adams', 'amsterdam', 'audubon', 'bethune gardens', 'marshall plaza', 'washington']","{'1986', '2023', '2019', '8500', '1962', '2022', '1967'}"
+http://nychanow.nyc/elevators-replacement/,"['adams', 'albany', 'jackson', 'lafayette', 'marcy']","{'2020', '2021', '3400', '7800', '1600', '2019', '1520', '2028', '3100', '2022', '1990'}"
+http://nychanow.nyc/pact-progress-2022/,"['adams', 'butler', 'chelsea', 'eastchester gardens', 'edenwald', 'elliott', 'fulton', 'grant', 'harlem river', 'manhattanville', 'melrose', 'moore', 'rangel', 'sack wern', 'smith', 'wald', 'white']","{'7600', '2023', '1325', '8531', '6200', '2026', '2028', '3610', '2022'}"
+http://nychanow.nyc/nychas-healthy-homes-unit-makes-significant-progress-for-residents-in-2022/,"['astoria', 'brevoort', 'chelsea', 'elliott', 'jefferson', 'queensbridge north', 'ravenswood', 'red hook east', 'sumner', 'tompkins', 'wilson']","{'2020', '2023', '2248', '1289', '2000', '6188', '2022', '1400'}"
+http://nychanow.nyc/nycha-resident-finds-success-through-the-nrta-program/,"['east river', 'washington']","{'2010', '2020', '3365', '2022'}"

@@ -1,12 +1,14 @@
 import re
 import time
 import pandas as pd
+import csv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
 URL = "http://nychanow.nyc/issues/"
 NYCHA_DATA = "src/data/NYCHA.csv"
+RESULTS_PATH = "src/data/nychanow_results.csv"
 
 """ initializes selenium"""
 def init():
@@ -23,9 +25,23 @@ def fetch_buildings(file):
     building_names = df.iloc[:,1].tolist()
     return building_names
 
+""" extract all mentioned dates in article using regex """
+def extract_dates(text):
+    dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
+    dates += re.findall(r'\d{4}',text)
+    if not dates:
+        return "None"
+    return set(dates)
+
+""" write url, buildings, dates to csv """
+def write_results(url,builidings,dates):
+    with open (RESULTS_PATH,'a') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow([url,builidings,dates])
+    csvfile.close()
+    
 """ performs text analysis of given article """
 def analyze_article(article,buildings,driver:webdriver.Chrome):
-    print(article)
     driver.get(article)
     # text is divided into various p tags, so we need all of them
     p_tags = driver.find_element(By.TAG_NAME,"article").find_elements(By.TAG_NAME,"p")
@@ -40,17 +56,19 @@ def analyze_article(article,buildings,driver:webdriver.Chrome):
     for building in buildings:
         if building in text:
             mentioned.append(building)
-    if mentioned:
+    if mentioned: # if NYCHA buildings mentioned, get dates and write all data to csv
         dates = extract_dates(text)
-
-""" extract all mentioned dates in article using regex """
-def extract_dates(text):
-    dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
-    dates += re.findall(r'\d{4}',text)
-    return set(dates)
-
+        write_results(article,mentioned,dates)
+    
 """ the worker function """
 def __main__():
+    # add column names to csv file
+    columns = ['url','buildings','dates']
+    with open (RESULTS_PATH,'w') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(columns)
+    csvfile.close()
+
     driver = init()
     driver.get(URL)
     time.sleep(5)
