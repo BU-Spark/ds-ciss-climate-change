@@ -1,28 +1,306 @@
 url,buildings,dates
-http://nychanow.nyc/celebrating-womens-history-month-2/,"['johnson', 'riis']",{'2000'}
-http://nychanow.nyc/meet-the-coaching-and-mentoring-leadership-academy-participants/,['isaacs'],"{'2020', '1991', '2023'}"
-http://nychanow.nyc/celebrating-social-work-month-meet-marina-oteiza-director-of-family-partnerships/,"['grant', 'tompkins']","{'2014', '1978', '1970'}"
-http://nychanow.nyc/celebrating-womens-history-month-meet-michele-moore-director-of-comprehensive-modernization/,"['moore', 'todt hill']","{'2012', '2021', '2015'}"
-http://nychanow.nyc/celebrating-black-history-month-at-red-hook-houses/,['red hook west'],None
-http://nychanow.nyc/daniel-barber-bhm/,"['clinton', 'jackson']","{'1972', '2018'}"
-http://nychanow.nyc/board-member-raymond-miller-bhm/,"['johnson', 'smith']",{'1984'}
-http://nychanow.nyc/celebrating-black-history-month-8/,['brown'],"{'2020', '2018', '2022', '4000'}"
-http://nychanow.nyc/board-member-james-mckoy-bhm/,['adams'],None
-http://nychanow.nyc/meet-george-gomez-supervisor-of-rees-job-generation/,['sack wern'],"{'2022', '2019'}"
-http://nychanow.nyc/meet-yolanda-brooks-community-associate-in-the-office-of-public-safety-security/,"['taft', 'washington']","{'2011', '2018', '2019', '2001'}"
-http://nychanow.nyc/nycha-and-resident-leaders-select-pact-partners-to-address-85m-in-repair-needs-at-metro-north-plaza-and-gaylord-white-houses/,"['adams', 'johnson', 'metro north plaza', 'robinson', 'white']","{'1988', '2024', '8500', '1893', '8531', '6200', '3610', '2022', '1400'}"
-http://nychanow.nyc/meet-richard-meyers-project-manager-in-asset-capital-management/,"['jackson', 'johnson']","{'1988', '2015', '2019', '1993', '2022'}"
-http://nychanow.nyc/nycha-launches-first-ever-leadership-academy-for-staff/,['woodson'],None
-http://nychanow.nyc/nycha-opens-comp-mod-resident-engagement-office-at-todt-hill-houses-ahead-of-renovations/,"['moore', 'todt hill']","{'2123', '0667', '2024'}"
-http://nychanow.nyc/nychas-capital-projects-roundup-december-january/,"['bushwick', 'farragut', 'gowanus', 'marshall plaza', 'nostrand']","{'2150', '2130', '5510', '3100', '9440'}"
-http://nychanow.nyc/read-healthy-happenings-the-ehs-newsletter/,['brown'],"{'1000', '0777', '2022', '7187'}"
-http://nychanow.nyc/resident-groups-awarded-climate-action-grants-for-community-sustainability-projects/,"['grant', 'mill brook', 'red hook west', 'wagner', 'woodside']","{'2021', '5000'}"
-http://nychanow.nyc/meet-victoria-vasquez-the-voice-of-nycha/,['vladeck'],{'2012'}
-http://nychanow.nyc/nycha-celebrates-key-landmarks-for-sustainability-in-2022/,"['astoria', 'berry', 'carey gardens', 'grant', 'mill brook', 'polo grounds towers', 'red hook west', 'wagner', 'woodside']","{'2021', '2023', '5000', '3000', '2022'}"
-http://nychanow.nyc/two-residents-named-new-members-of-nycha-board/,"['adams', 'albany', 'johnson', 'smith']","{'2011', '2021', '4000', '2019', '1984'}"
-http://nychanow.nyc/nycha-ceo-coo-pix11/,['wald'],None
-http://nychanow.nyc/nycha-and-partners-begin-137m-pact-modernization/,"['adams', 'amsterdam', 'audubon', 'bethune gardens', 'marshall plaza', 'washington']","{'1986', '2023', '2019', '8500', '1962', '2022', '1967'}"
-http://nychanow.nyc/elevators-replacement/,"['adams', 'albany', 'jackson', 'lafayette', 'marcy']","{'2020', '2021', '3400', '7800', '1600', '2019', '1520', '2028', '3100', '2022', '1990'}"
-http://nychanow.nyc/pact-progress-2022/,"['adams', 'butler', 'chelsea', 'eastchester gardens', 'edenwald', 'elliott', 'fulton', 'grant', 'harlem river', 'manhattanville', 'melrose', 'moore', 'rangel', 'sack wern', 'smith', 'wald', 'white']","{'7600', '2023', '1325', '8531', '6200', '2026', '2028', '3610', '2022'}"
-http://nychanow.nyc/nychas-healthy-homes-unit-makes-significant-progress-for-residents-in-2022/,"['astoria', 'brevoort', 'chelsea', 'elliott', 'jefferson', 'queensbridge north', 'ravenswood', 'red hook east', 'sumner', 'tompkins', 'wilson']","{'2020', '2023', '2248', '1289', '2000', '6188', '2022', '1400'}"
-http://nychanow.nyc/nycha-resident-finds-success-through-the-nrta-program/,"['east river', 'washington']","{'2010', '2020', '3365', '2022'}"
+https://nychanow.nyc/celebrating-womens-history-month-2/,"['johnson', 'riis']",{'2000'}
+https://nychanow.nyc/meet-the-coaching-and-mentoring-leadership-academy-participants/,['isaacs'],"{'2023', '1991', '2020'}"
+https://nychanow.nyc/celebrating-social-work-month-meet-marina-oteiza-director-of-family-partnerships/,"['grant', 'tompkins']","{'1970', '2014', '1978'}"
+https://nychanow.nyc/celebrating-womens-history-month-meet-michele-moore-director-of-comprehensive-modernization/,"['moore', 'todt hill']","{'2015', '2012', '2021'}"
+https://nychanow.nyc/celebrating-black-history-month-at-red-hook-houses/,['red hook west'],None
+https://nychanow.nyc/daniel-barber-bhm/,"['clinton', 'jackson']","{'2018', '1972'}"
+https://nychanow.nyc/board-member-raymond-miller-bhm/,"['johnson', 'smith']",{'1984'}
+https://nychanow.nyc/celebrating-black-history-month-8/,['brown'],"{'2018', '4000', '2022', '2020'}"
+https://nychanow.nyc/board-member-james-mckoy-bhm/,['adams'],None
+https://nychanow.nyc/meet-george-gomez-supervisor-of-rees-job-generation/,['sack wern'],"{'2022', '2019'}"
+https://nychanow.nyc/meet-yolanda-brooks-community-associate-in-the-office-of-public-safety-security/,"['taft', 'washington']","{'2018', '2011', '2001', '2019'}"
+https://nychanow.nyc/nycha-and-resident-leaders-select-pact-partners-to-address-85m-in-repair-needs-at-metro-north-plaza-and-gaylord-white-houses/,"['adams', 'johnson', 'metro north plaza', 'robinson', 'white']","{'3610', '1400', '2024', '8531', '6200', '1988', '2022', '8500', '1893'}"
+https://nychanow.nyc/meet-richard-meyers-project-manager-in-asset-capital-management/,"['jackson', 'johnson']","{'2019', '2015', '1993', '1988', '2022'}"
+https://nychanow.nyc/nycha-launches-first-ever-leadership-academy-for-staff/,['woodson'],None
+https://nychanow.nyc/nycha-opens-comp-mod-resident-engagement-office-at-todt-hill-houses-ahead-of-renovations/,"['moore', 'todt hill']","{'2123', '0667', '2024'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-december-january/,"['bushwick', 'farragut', 'gowanus', 'marshall plaza', 'nostrand']","{'2130', '9440', '5510', '2150', '3100'}"
+https://nychanow.nyc/read-healthy-happenings-the-ehs-newsletter/,['brown'],"{'2022', '7187', '0777', '1000'}"
+https://nychanow.nyc/resident-groups-awarded-climate-action-grants-for-community-sustainability-projects/,"['grant', 'mill brook', 'red hook west', 'wagner', 'woodside']","{'5000', '2021'}"
+https://nychanow.nyc/meet-victoria-vasquez-the-voice-of-nycha/,['vladeck'],{'2012'}
+https://nychanow.nyc/nycha-celebrates-key-landmarks-for-sustainability-in-2022/,"['astoria', 'berry', 'carey gardens', 'grant', 'mill brook', 'polo grounds towers', 'red hook west', 'wagner', 'woodside']","{'2023', '5000', '3000', '2021', '2022'}"
+https://nychanow.nyc/two-residents-named-new-members-of-nycha-board/,"['adams', 'albany', 'johnson', 'smith']","{'2019', '1984', '2021', '2011', '4000'}"
+https://nychanow.nyc/nycha-ceo-coo-pix11/,['wald'],None
+https://nychanow.nyc/nycha-and-partners-begin-137m-pact-modernization/,"['adams', 'amsterdam', 'audubon', 'bethune gardens', 'marshall plaza', 'washington']","{'2023', '2019', '1986', '1967', '1962', '2022', '8500'}"
+https://nychanow.nyc/elevators-replacement/,"['adams', 'albany', 'jackson', 'lafayette', 'marcy']","{'2019', '2028', '1600', '2021', '7800', '1990', '1520', '2022', '3100', '3400', '2020'}"
+https://nychanow.nyc/pact-progress-2022/,"['adams', 'butler', 'chelsea', 'eastchester gardens', 'edenwald', 'elliott', 'fulton', 'grant', 'harlem river', 'manhattanville', 'melrose', 'moore', 'rangel', 'sack wern', 'smith', 'wald', 'white']","{'2023', '3610', '1325', '2028', '8531', '6200', '2026', '2022', '7600'}"
+https://nychanow.nyc/nychas-healthy-homes-unit-makes-significant-progress-for-residents-in-2022/,"['astoria', 'brevoort', 'chelsea', 'elliott', 'jefferson', 'queensbridge north', 'ravenswood', 'red hook east', 'sumner', 'tompkins', 'wilson']","{'2023', '1400', '2248', '1289', '2000', '2022', '2020', '6188'}"
+https://nychanow.nyc/nycha-resident-finds-success-through-the-nrta-program/,"['east river', 'washington']","{'2022', '3365', '2020', '2010'}"
+https://nychanow.nyc/guidance-regarding-covid-19/,"['adams', 'astoria', 'dyckman', 'fulton', 'grant', 'johnson', 'melrose', 'rutgers', 'stapleton', 'taft', 'tompkins', 'wagner']","{'0070', '3310', '8242', '7187', '4142', '0521', '1400', '8774', '6182', '3292', '1231', '6535', '9112', '1200', '8302', '4620', '6926', '2823', '3152', '8778', '3162', '1152', '7620', '0332', '7821', '2123', '7282', '5122', '3202', '1120', '5152', '1252', '3132', '0152', '5520', '2221', '2946', '4152', '2192', '1082', '9294', '1215', '5142', '2252', '3252', '1292', '2321', '1219', '1877', '1279', '2023', '4162', '9220', '7186', '1110', '2722', '3262', '4220', '1141', '3172', '3302', '9696', '7242', '9152', '1015', '9320', '3122', '5192', '1117', '6252', '4098', '8161', '1278', '8312', '1192', '9162', '3222', '0670', '1422', '5182', '6232', '1221', '5521', '1866', '5132', '2182', '7188', '1201', '8112', '7152', '4120', '4202', '1062', '2020', '6102', '1229', '1010', '9126', '2122', '7920', '3722', '4879', '7077', '3322', '2021', '2022', '5120', '8895', '0777', '1213', '8936', '1028', '4821', '1132', '1031', '3192', '5919', '4921', '6843', '7121', '8554', '0789', '4272', '1223', '4122', '6637', '1045', '5172', '3066', '1002', '1622', '4132', '9232', '7302', '3720', '4033', '3242'}"
+https://nychanow.nyc/celebrating-the-life-stories-of-nycha-residents/,['johnson'],"{'2022', '2020'}"
+https://nychanow.nyc/meet-alex-zablocki-executive-director-of-the-fund-for-public-housing/,"['baruch', 'castle hill', 'grant', 'marlboro', 'patterson']","{'5000', '9000', '1400', '2001', '2016', '2003'}"
+https://nychanow.nyc/nychas-language-services-unit-completes-its-10000th-translation/,"['butler', 'grant']","{'2008', '2022', '2506', '1000'}"
+https://nychanow.nyc/meet-eva-trimble-nychas-new-chief-operating-officer/,['grant'],"{'2022', '2023', '1970', '1977'}"
+https://nychanow.nyc/visioning-the-future-of-gowanus-houses-and-wyckoff-gardens/,"['gowanus', 'wyckoff gardens']","{'2022', '4000', '2021'}"
+https://nychanow.nyc/thankful-for-the-nycha-community/,"['berry', 'carey gardens', 'coney island', 'marlboro', 'nostrand', 'robinson', 'sheepshead bay', 'white']","{'2022', '9000', '1400', '5000'}"
+https://nychanow.nyc/nychas-work-order-reform-continues-making-strides-after-citywide-rollout/,"['astoria', 'jackson', 'kingsborough']","{'2022', '2021'}"
+https://nychanow.nyc/gas-restored-at-17-developments-impacting-more-than-1000-households-in-time-for-thanksgiving/,"['bland', 'boston secor', 'breukelen', 'coney island', 'east river', 'gun hill', 'jefferson', 'king towers', 'kingsborough', 'melrose', 'parkside', 'pomonok', 'queensbridge south', 'throggs neck', 'tilden', 'wagner']","{'9000', '5000', '1400', '1000', '2021'}"
+https://nychanow.nyc/success-stories/,"['grant', 'parkside']","{'2022', '2500'}"
+https://nychanow.nyc/nycha-observes-america-recycles-day-every-day-of-the-year/,"['astoria', 'bay view', 'forest', 'howard', 'johnson', 'patterson', 'polo grounds towers', 'wagner']","{'2015', '4100', '2026', '2017', '2021'}"
+https://nychanow.nyc/longtime-resident-dedicates-career-to-nycha-u-s-army/,['lafayette'],"{'2018', '1994'}"
+https://nychanow.nyc/nychas-policy-advisor-presents-at-international-sustainability-conference/,['cooper park'],{'2022'}
+https://nychanow.nyc/ask-the-ceo-2/,['beach 41st street'],"{'1970', '1550'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-september-october-2022/,"['edenwald', 'farragut', 'grant', 'low houses', 'smith', 'wald']","{'4600', '1200', '3100', '2200'}"
+https://nychanow.nyc/free-mentor-program-helps-nycha-cuny-amazon-scholars-with-career-planning/,['grant'],{'2022'}
+https://nychanow.nyc/nyc-celebrated-as-finalist-for-c40-cities-bloomberg-philanthropies-award/,"['adams', 'amsterdam']","{'2050', '2026', '3000', '2022', '2025'}"
+https://nychanow.nyc/customer-service-week-2022-celebrate-service/,"['richmond terrace', 'wyckoff gardens']",{'2022'}
+https://nychanow.nyc/nypd-veteran-returns-to-nycha-to-help-lead-the-office-of-safety-and-security/,"['coney island', 'smith', 'surfside gardens']",None
+https://nychanow.nyc/nycha-safety-awards-recognize-staff-efforts/,"['farragut', 'highbridge gardens']","{'4000', '2021'}"
+https://nychanow.nyc/october-is-cybersecurity-awareness-month-2/,['grant'],None
+https://nychanow.nyc/keeping-seniors-safe-at-home/,['boston road plaza'],{'2021'}
+https://nychanow.nyc/nycha-closes-on-transfer-of-manhattanville-development-rights-to-adjacent-site/,"['amsterdam', 'manhattanville']","{'2024', '1440', '1250', '2026', '2013', '2021', '2800'}"
+https://nychanow.nyc/ehs-fire-safety-oversight-team-honored-for-exemplary-customer-service/,['adams'],None
+https://nychanow.nyc/hispanic-heritage-month-david-soto/,['tompkins'],{'2021'}
+https://nychanow.nyc/mayor-adams-honors-nycha-employee-for-supporting-resident-associations/,"['adams', 'brown', 'brownsville', 'howard']",None
+https://nychanow.nyc/senior-affordable-housing-complex-holds-ribbon-cutting-near-mill-brook-houses/,"['mill brook', 'mott haven']","{'8700', '2020', '1000'}"
+https://nychanow.nyc/climate-corps-fellows-study-sustainable-food-waste-solutions-at-nycha/,"['brown', 'rutgers', 'wagner']",{'2026'}
+https://nychanow.nyc/nycha-performs-milestone-crane-lift-for-sandy-recovery-program/,"['grant', 'hammel']","{'2023', '2015', '2016', '2012'}"
+https://nychanow.nyc/complimenting-staff/,"['baruch', 'breukelen', 'carey gardens', 'grant', 'haber', 'howard', 'lehman', 'monroe', 'moore', 'todt hill', 'wyckoff gardens']","{'1122', '2000', '3058', '1046', '1100', '2021'}"
+https://nychanow.nyc/nycha-distributed-welcome-baby-bags-to-expecting-families/,"['cypress hills', 'forest']","{'2123', '0682'}"
+https://nychanow.nyc/meet-shanna-castillo-senior-director-rees/,"['baruch', 'carey gardens', 'east river']","{'2020', '2015', '2012'}"
+https://nychanow.nyc/meet-brian-honan-senior-vice-president-of-intergovernmental-relations/,['albany'],"{'2008', '2006', '2019'}"
+https://nychanow.nyc/nycha-plumber-organizes-workshops-for-girls/,['grant'],None
+https://nychanow.nyc/national-night-out-2022/,"['adams', 'fulton', 'patterson']",None
+https://nychanow.nyc/berry-houses-welcomes-upgraded-gym-for-youth-boxing-fitness/,['berry'],{'1500'}
+https://nychanow.nyc/70-million-initial-investment-will-decarbonize-nycha-buildings-with-new-heat-pump-electrification-technologies/,"['adams', 'grant']","{'2015', '1560', '1000', '2050', '1968', '3000', '2000', '2022', '2030', '2198'}"
+https://nychanow.nyc/meet-teri-dawson-neighborhood-administrator/,"['amsterdam', 'brevoort', 'east river', 'fulton', 'jefferson', 'kingsborough', 'manhattanville', 'queensbridge north', 'queensbridge south', 'straus']","{'2022', '1984', '1986'}"
+https://nychanow.nyc/nycha-skyliners-take-aim-at-softball-league-championship/,['albany'],None
+https://nychanow.nyc/comp-mod-networking-event/,"['adams', 'gowanus', 'moore', 'todt hill', 'wyckoff gardens']",{'2019'}
+https://nychanow.nyc/nycha-tips-off-new-season-of-junior-knicks-basketball-league/,"['bronx river', 'carver', 'hammel', 'wald']","{'1213', '1415', '2021', '2022', '1011'}"
+https://nychanow.nyc/making-a-difference-10/,['baruch'],None
+https://nychanow.nyc/nycha-begins-design-and-construction-of-state-of-the-art-pneumatic-waste-collection-system-at-polo-grounds-towers/,"['berry', 'polo grounds towers', 'rangel', 'roosevelt i']",{'2010'}
+https://nychanow.nyc/announcing-new-chief-operating-officer-and-deputy-chief-operating-officer-appointments/,['baruch'],{'2019'}
+https://nychanow.nyc/pact-a-better-way-of-living-for-nycha-residents/,['smith'],"{'1984', '1970', '1550', '1975'}"
+https://nychanow.nyc/veteran-caretakers-presented-with-john-decarlo-award-for-exemplary-service/,"['baruch', 'marlboro', 'smith', 'stapleton']","{'2022', '1997', '2004', '1000'}"
+https://nychanow.nyc/residents-work-with-professional-architect-mentors-on-design-ideas-for-wagner-houses/,['wagner'],None
+https://nychanow.nyc/betances-residence-opens-in-the-bronx/,['mott haven'],"{'4700', '1200'}"
+https://nychanow.nyc/meet-a-nycha-construction-partner-stv/,"['edenwald', 'johnson', 'kingsborough', 'pomonok', 'smith', 'wald']","{'2007', '2000', '1940', '1930', '1939', '1998', '7400', '3000', '1960', '1934'}"
+https://nychanow.nyc/spotlight-on-nychas-chinese-american-association/,['smith'],{'2022'}
+https://nychanow.nyc/meet-lisa-gladden-housing-assistant-at-breukelen-houses/,"['breukelen', 'sumner']",None
+https://nychanow.nyc/governor-signs-legislation-establishing-the-nyc-public-housing-preservation-trust/,"['adams', 'albany', 'polo grounds towers']","{'2500', '9409', '7805'}"
+https://nychanow.nyc/meet-cherry-mccutchen-director-of-learning-and-development/,['forest'],{'1969'}
+https://nychanow.nyc/bringing-covid-19-tests-close-to-home/,"['brown', 'brownsville']",{'6000'}
+https://nychanow.nyc/the-fund-for-public-housing-names-new-executive-director/,['baruch'],{'1000'}
+https://nychanow.nyc/refurbished-basketball-court-opens-for-play-at-patterson-houses/,['patterson'],{'5000'}
+https://nychanow.nyc/community-visioning-for-the-future-of-todt-hill-and-st-nicholas-houses/,"['moore', 'todt hill']","{'2019', '2028', '4400', '2021', '2022'}"
+https://nychanow.nyc/nycha-celebrates-new-community-garden-at-manhattanville-houses/,['manhattanville'],{'2017'}
+https://nychanow.nyc/indoor-air-quality-at-nycha/,['castle hill'],None
+https://nychanow.nyc/spotlight-on-nychas-relocation-team/,"['bronx river', 'mitchel']",None
+https://nychanow.nyc/434-million-in-comprehensive-renovations-completed-at-9-developments/,"['adams', 'albany', 'berry', 'brown']","{'1970', '2600', '6000', '1550', '2016', '2625', '3500'}"
+https://nychanow.nyc/meet-the-oem-field-coordinators-team/,['lincoln'],{'2019'}
+https://nychanow.nyc/city-cleanup-corps-a-foot-in-the-door-to-nycha/,"['albany', 'borinquen plaza i']","{'2021', '1308', '2022', '1000'}"
+https://nychanow.nyc/nycha-honored-by-nypa-as-electrification-leader/,"['1471 watson avenue', '830 amsterdam avenue', 'albany', 'amsterdam']","{'2022', '1471'}"
+https://nychanow.nyc/upgraded-fitness-room-opens-at-red-hook-east-with-assist-from-the-nets/,['red hook east'],{'2021'}
+https://nychanow.nyc/nychas-capital-projects-roundup-april/,"['grant', 'king towers', 'marble hill']","{'2500', '3100', '7500', '2900'}"
+https://nychanow.nyc/preschoolers-at-smith-houses-compost-food-scraps/,['smith'],None
+https://nychanow.nyc/nycha-residents-thriving-in-it-careers-after-tech51-training/,['mckinley'],"{'2017', '2898', '2021'}"
+https://nychanow.nyc/nycha-residents-employees-honored-by-chpc/,"['chelsea', 'chelsea addition', 'elliott', 'fulton']",None
+https://nychanow.nyc/discussing-data-sharing-with-nychas-chief-information-officer/,['white'],None
+https://nychanow.nyc/meet-tracy-tomer/,"['brown', 'brownsville', 'howard']","{'2019', '1998', '2020', '2021'}"
+https://nychanow.nyc/ask-the-chair-3/,['todt hill'],None
+https://nychanow.nyc/mobile-prostate-cancer-screening-unit-available-for-nycha-residents/,"['smith', 'wagner']","{'3180', '6465'}"
+https://nychanow.nyc/basketball-court-bbq-spaces-support-connected-communities-at-pomonok-houses/,['pomonok'],None
+https://nychanow.nyc/earth-week-commemorated-with-events-across-nycha/,"['1471 watson avenue', 'bay view', 'forest', 'grant', 'mitchel', 'wagner']","{'1471', '2020', '3000'}"
+https://nychanow.nyc/nycha-neighborhood-administrator-presents-career-tips-to-harlem-youth/,"['grant', 'king towers', 'manhattanville']",None
+https://nychanow.nyc/72-million-of-heating-system-improvements-coming-to-marble-hill-and-berry-houses/,"['830 amsterdam avenue', 'amsterdam', 'berry', 'marble hill']","{'2019', '2023', '2040', '2100', '2021', '2050', '2200', '2030', '4000'}"
+https://nychanow.nyc/bronx-development-gets-first-induction-stoves-in-move-to-become-fully-electrified/,['1471 watson avenue'],"{'2023', '1471'}"
+https://nychanow.nyc/meet-javerea-komal/,['grant'],"{'2019', '4000', '2015'}"
+https://nychanow.nyc/16-nycha-owned-houses-to-be-rehabilitated-and-sold-to-low-and-moderate-income-new-yorkers/,"['adams', 'grant', 'woodside']","{'2019', '1970', '2007', '1980', '2012', '2018', '2011'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-march/,"['breukelen', 'grant', 'jackson', 'marcy', 'smith']","{'8910', '2000'}"
+https://nychanow.nyc/resident-roundtable-member-spotlight-2/,"['brevoort', 'johnson', 'kingsborough', 'park rock rehab']",{'2021'}
+https://nychanow.nyc/meet-kimberly-taylor-director-of-public-housing-tenancy-operations/,"['baruch', 'johnson', 'patterson']","{'1984', '2021', '2018'}"
+https://nychanow.nyc/nychas-open-space-masterplan-recognized-by-the-american-society-of-landscape-architects/,['smith'],{'2020'}
+https://nychanow.nyc/free-internet-installed-at-3-nycha-developments/,"['baruch', 'riis', 'wald']",None
+https://nychanow.nyc/womens-history-month-a-spotlight-on-women-at-nycha/,"['johnson', 'woodside']",{'2021'}
+https://nychanow.nyc/stakeholders-give-thumbs-up-to-nychas-work-order-reform-in-queens-staten-island/,"['bland', 'stapleton', 'white']",{'2020'}
+https://nychanow.nyc/nycha-observes-world-water-day/,"['clinton', 'gowanus']",{'2400'}
+https://nychanow.nyc/junior-knicks-basketball-skills-clinic-celebrates-empowerment-for-girls/,"['breukelen', 'johnson']",{'2000'}
+https://nychanow.nyc/resident-roundtable-member-spotlight/,"['east river', 'jefferson', 'monroe', 'wagner', 'wilson']","{'2018', '2021'}"
+https://nychanow.nyc/healthy-start-nycha-program-launches-with-baby-shower-at-ingersoll-houses/,['ingersoll'],None
+https://nychanow.nyc/28-6m-in-heating-upgrades-at-taft-houses-and-whitman-houses/,"['grant', 'taft', 'whitman']","{'2019', '1400', '1800', '6000', '1962', '2021', '2018', '1700', '2020'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-february/,"['grant', 'johnson']",None
+https://nychanow.nyc/apply-now-for-the-summer-youth-employment-program/,['adams'],"{'2022', '8002', '9000', '4646'}"
+https://nychanow.nyc/mayor-adams-meets-with-nycha-staff-in-first-visit-to-emergency-operations-center/,['adams'],None
+https://nychanow.nyc/pact-partners-to-provide-360m-in-comprehensive-repairs-for-reid-apartments-and-park-rock-consolidated/,['reid apartments'],"{'2023', '1970', '2015', '1550', '2016', '1700', '3600', '3500'}"
+https://nychanow.nyc/meet-ukah-busgith/,"['grant', 'pink', 'tilden']",None
+https://nychanow.nyc/sideya-sherman-trie/,"['adams', 'grant']","{'2011', '2020', '6000'}"
+https://nychanow.nyc/nycha-naacp-branchs-black-health-and-wellness-event/,['brown'],{'1200'}
+https://nychanow.nyc/meet-nycha-change-ambassador-albert-freeman/,['ingersoll'],None
+https://nychanow.nyc/nycha-and-hdc-finalize-deal-to-begin-236-million-renovation-at-harlem-river/,"['grant', 'harlem river', 'harlem river ii', 'wilson']","{'1970', '2024', '1979', '1936', '1965', '1550', '2016', '1937', '2025', '3500', '3064'}"
+https://nychanow.nyc/nycha-city-tech-program-brings-urban-design-case-study-to-washington-houses/,"['ingersoll', 'sheepshead bay', 'wagner', 'washington', 'whitman']",{'2021'}
+https://nychanow.nyc/nycha-discontinues-over-31000-non-payment-cases/,['grant'],"{'2019', '2300', '2021', '2022', '3400', '2800', '2020'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-january/,"['ingersoll', 'woodson']","{'8580', '1720'}"
+https://nychanow.nyc/making-a-difference-for-residents-14/,"['clinton', 'cypress hills']",{'2020'}
+https://nychanow.nyc/new-executive-appointments/,['brown'],"{'2019', '2014'}"
+https://nychanow.nyc/nycha-is-now-recycling-mattresses-at-dozens-of-developments/,"['albany', 'albany ii', 'astoria', 'baisley park', 'bay view', 'beach 41st street', 'berry', 'borinquen plaza i', 'breukelen', 'brevoort', 'carey gardens', 'dyckman', 'forest', 'grant', 'hammel', 'kingsborough', 'latimer gardens', 'marble hill', 'marlboro', 'mitchel', 'morris i', 'mott haven', 'pomonok', 'queensbridge south', 'rangel', 'ravenswood', 'redfern', 'richmond terrace', 'roosevelt i', 'south beach', 'south jamaica i', 'stapleton', 'throggs neck', 'todt hill', 'wagner', 'west brighton i', 'whitman', 'woodside']","{'2018', '2021', '2000', '2022', '2800'}"
+https://nychanow.nyc/what-do-you-want-to-tell-the-new-mayor/,['adams'],None
+https://nychanow.nyc/chief-james-secreto-called-back-to-duty-in-return-to-nycha/,['albany'],"{'2019', '1979', '4000', '2014', '2016', '2018', '2100', '2020'}"
+https://nychanow.nyc/a-fruitful-endeavor-farms-at-nycha/,"['bay view', 'forest', 'howard', 'pink', 'wagner']","{'2021', '2300', '3460', '2013', '2200', '2022', '2020'}"
+https://nychanow.nyc/new-retractable-goal-posts-create-multi-sport-space-at-butler-houses/,['butler'],None
+https://nychanow.nyc/chair-russ-joins-furman-center-panel-discussion-on-nychas-future/,"['edenwald', 'wald']",{'2019'}
+https://nychanow.nyc/making-a-difference-katie-gordon/,"['brown', 'brownsville']","{'2503', '5900', '2017', '2021', '2020'}"
+https://nychanow.nyc/nycha-workers-residents-help-teens-escaping-fire/,"['brown', 'riis']",None
+https://nychanow.nyc/new-pact-projects-to-deliver-comprehensive-repairs-and-quality-property-management-for-more-than-3100-nycha-apartments/,"['butler', 'eastchester gardens', 'melrose', 'moore', 'rangel', 'west brighton i']","{'2022', '3100', '3500'}"
+https://nychanow.nyc/hernandez-houses-residents-celebrate-new-playground/,['hernandez'],None
+https://nychanow.nyc/nycha-partners-announce-innovation-challenge-for-clean-energy-heating-cooling-systems/,"['amsterdam', 'grant']","{'1996', '5000', '4000', '1990', '7500', '2400', '2030', '2198', '1480'}"
+https://nychanow.nyc/green-infrastructure-installations-help-tackle-excess-stormwater/,"['bronx river', 'clinton', 'gowanus']","{'2022', '2012'}"
+https://nychanow.nyc/hud-secretary-fudge-meets-with-residents-in-first-visit-to-nycha/,['patterson'],{'2021'}
+https://nychanow.nyc/meet-carlos-falu-neighborhood-administrator-in-staten-island/,['moore'],"{'7000', '4000'}"
+https://nychanow.nyc/445-million-in-comprehensive-repairs-coming-to-edenwald-houses/,"['edenwald', 'wald']","{'2023', '9500', '4800', '1953', '2000', '2021', '2560', '3500', '3064'}"
+https://nychanow.nyc/meet-mildred-aviles-housing-manager-at-rutgers-houses/,"['baruch', 'chelsea', 'riis', 'rutgers', 'straus']",{'1995'}
+https://nychanow.nyc/366-million-in-investments-coming-to-four-nycha-developments-in-chelsea/,"['chelsea', 'chelsea addition', 'elliott', 'fulton']","{'2019', '2023', '1400', '2054', '9500', '2000', '2021', '2190', '4500', '3200', '3064'}"
+https://nychanow.nyc/nycha-residents-take-construction-business-training/,"['grant', 'jackson']",{'5350'}
+https://nychanow.nyc/making-a-difference-5/,['eastchester gardens'],"{'2017', '2005'}"
+https://nychanow.nyc/nycha-and-partners-celebrate-ribbon-cutting-for-van-dyke-iii-affordable-housing-project/,"['adams', 'brown', 'brownsville', 'crown heights', 'van dyke i', 'van dyke ii']","{'2026', '8000', '3000'}"
+https://nychanow.nyc/nycha-eco-hubs-host-free-harvest-festivals/,"['bay view', 'forest', 'howard', 'wagner']",None
+https://nychanow.nyc/nychas-capital-projects-roundup-october/,"['grant', 'ingersoll', 'patterson', 'robinson', 'vladeck']","{'4500', '4300'}"
+https://nychanow.nyc/three-nycha-youth-basketball-teams-claim-junior-knicks-league-championships/,"['bronx river', 'carver', 'hammel', 'johnson', 'wald']","{'5000', '1213', '1415', '2000', '3000', '2021'}"
+https://nychanow.nyc/customer-service-week-2021-power-of-service/,"['brown', 'jefferson', 'parkside', 'pomonok', 'queensbridge north']","{'5700', '1200', '2021'}"
+https://nychanow.nyc/read-the-privacy-offices-first-newsletter/,['grant'],"{'2019', '0021', '0031', '1000'}"
+https://nychanow.nyc/nycha-releases-climate-adaptation-plans-for-addressing-extreme-weather-hazards/,"['clinton', 'forest']","{'2050', '2100', '2198', '2012'}"
+https://nychanow.nyc/residents-ideas-included-in-nychas-sustainability-agenda/,"['grant', 'mott haven']",None
+https://nychanow.nyc/personnel-announcements-2/,['albany'],"{'2019', '1979', '2014', '1600', '2100'}"
+https://nychanow.nyc/making-a-difference-for-residents-11/,['baruch'],"{'1822', '4060', '2021'}"
+https://nychanow.nyc/new-fitness-hub-for-seniors-at-pink-houses/,"['adams', 'carver', 'pink']","{'1200', '9500', '3569', '2018', '7670'}"
+https://nychanow.nyc/new-pact-projects-to-deliver-comprehensive-repairs-quality-property-management-for-more-than-5900-bronx-manhattan-apartments/,"['boston secor', 'middletown plaza', 'taft']","{'2016', '5900', '2021'}"
+https://nychanow.nyc/nycha-will-require-more-minority-and-women-business-participation-in-its-contracts/,['johnson'],"{'2019', '2893', '2025', '2021'}"
+https://nychanow.nyc/celebrating-hispanic-heritage-2/,['white'],"{'2017', '2019', '2005', '1991'}"
+https://nychanow.nyc/nycha-and-baby2baby-give-away-baby-and-child-supplies/,['saint nicholas'],"{'1100', '2000'}"
+https://nychanow.nyc/making-a-difference-for-residents-8/,['parkside'],"{'1822', '2021'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-september/,"['boston road plaza', 'corsi houses', 'grant', 'jackson']","{'5000', '2015', '1500', '3000'}"
+https://nychanow.nyc/nycha-employees-joined-by-young-family-members-for-mets-first-pitch/,['washington'],{'2014'}
+https://nychanow.nyc/protecting-public-housing-from-the-impacts-of-climate-change/,"['forest', 'white', 'wilson']",{'2027'}
+https://nychanow.nyc/nycha-and-hpd-finalize-deal-to-build-101-affordable-apartments-in-the-bronx/,['mott haven'],"{'2019', '1000'}"
+https://nychanow.nyc/making-a-difference-for-residents-7/,"['cypress hills', 'marcy']","{'1822', '1507', '2021'}"
+https://nychanow.nyc/junior-knicks-basketball-league-restores-citywide-play-for-nycha-youth/,"['wagner', 'wald']","{'5000', '1213', '1415', '3000', '2000', '1011'}"
+https://nychanow.nyc/nychas-clean-vents-initiative-generates-jobs-improves-air-quality/,['south beach'],"{'2503', '1000', '2021', '2022', '3100', '2020'}"
+https://nychanow.nyc/nycha-celebrates-climate-week-with-updated-sustainability-agenda/,['forest'],"{'2000', '2021'}"
+https://nychanow.nyc/low-cost-internet-installed-at-3-nycha-developments/,"['303 vernon avenue', 'wald', 'wyckoff gardens']","{'2020', '1048'}"
+https://nychanow.nyc/meet-shelisa-reid-manager-of-wyckoff-gardens/,"['breukelen', 'sheepshead bay', 'wyckoff gardens']","{'2020', '2014', '2016', '2004'}"
+https://nychanow.nyc/free-wi-fi-for-polo-grounds-residents/,['polo grounds towers'],{'2020'}
+https://nychanow.nyc/nychas-capital-projects-roundup-august/,"['carver', 'grant', 'washington']","{'2810', '3430'}"
+https://nychanow.nyc/upgraded-basketball-court-debuts-at-stapleton-houses/,['stapleton'],None
+https://nychanow.nyc/nycha-city-cleanup-corps-workers/,"['coney island', 'cypress hills', 'pink', 'sheepshead bay']","{'1500', '2020', '1000'}"
+https://nychanow.nyc/new-pilot-program-in-brooklyn-returns-caretakers-to-traditional-work-schedules/,"['303 vernon avenue', 'atlantic terminal site 4b', 'breukelen', 'sumner', 'wyckoff gardens']",None
+https://nychanow.nyc/newly-renovated-basketball-courts-celebrated-across-nycha-this-summer/,"['castle hill', 'king towers', 'moore', 'queensbridge north', 'richmond terrace', 'wagner', 'wald']",{'2021'}
+https://nychanow.nyc/making-a-difference-3/,['straus'],"{'1989', '2015'}"
+https://nychanow.nyc/making-a-difference-for-residents-6/,['mott haven'],None
+https://nychanow.nyc/nrta-graduate-builds-successful-career-in-construction/,['amsterdam'],"{'2847', '2014', '2010'}"
+https://nychanow.nyc/7995-2/,"['brown', 'forest', 'melrose', 'morris i', 'morris ii']","{'3000', '4000', '2020', '1000'}"
+https://nychanow.nyc/making-a-difference-2/,['parkside'],None
+https://nychanow.nyc/green-infrastructure-upgrades-at-gowanus-houses/,['gowanus'],None
+https://nychanow.nyc/nycha-essential-employees-join-hometown-heroes-parade/,"['berry', 'butler', 'cooper park', 'isaacs', 'johnson', 'smith', 'stapleton']","{'9000', '1998'}"
+https://nychanow.nyc/meet-nymiah-branch-neighborhood-administrator-in-brooklyn/,"['breukelen', 'clinton']","{'7000', '4000', '1999'}"
+https://nychanow.nyc/nychas-capital-projects-roundup-june/,['astoria'],{'6390'}
+https://nychanow.nyc/nycha-finalizes-deals-to-construct-393-affordable-apartments-for-seniors-in-the-bronx-brooklyn/,"['sotomayor', 'soundview', 'sumner']",{'1725'}
+https://nychanow.nyc/nycha-named-finalist-for-development-award/,['ingersoll'],{'2021'}
+https://nychanow.nyc/nycha-residents-present-design-concepts-via-new-program-with-city-tech/,"['ingersoll', 'whitman']",None
+https://nychanow.nyc/network-for-climate-action-selected-15-nycha-residents-to-engage-in-climate-solutions/,"['brown', 'brownsville', 'mott haven', 'washington']",{'2021'}
+https://nychanow.nyc/residents-hired-to-install-solar-panels-on-nycha-rooftops/,"['albany', 'carver', 'glenwood', 'kingsborough']","{'2025', '2021'}"
+https://nychanow.nyc/meet-verna-ferguson-esd/,['tilden'],"{'1969', '1986', '1985'}"
+https://nychanow.nyc/nycha-receives-563m-in-city-funding-to-upgrade-waste-management-systems/,['latimer gardens'],"{'2019', '2025', '5635', '1000'}"
+https://nychanow.nyc/first-members-of-resident-roundtable-announced/,"['154 west 84th street', 'adams', 'albany', 'amsterdam', 'astoria', 'baisley park', 'baruch', 'bay view', 'beach 41st street', 'berry', 'borinquen plaza i', 'boston secor', 'breukelen', 'brevoort', 'bronx river', 'brown', 'brownsville', 'bushwick', 'butler', 'carey gardens', 'carver', 'castle hill', 'chelsea', 'clinton', 'cooper park', 'cypress hills', 'dyckman', 'east river', 'eastchester gardens', 'edenwald', 'farragut', 'forest', 'fulton', 'glenwood', 'gompers', 'gowanus', 'grant', 'gun hill', 'hammel', 'harlem river', 'highbridge gardens', 'holmes towers', 'howard', 'hughes apartments', 'ingersoll', 'isaacs', 'jefferson', 'johnson', 'king towers', 'kingsborough', 'la guardia', 'lafayette', 'latimer gardens', 'lehman', 'lincoln', 'low houses', 'manhattanville', 'marble hill', 'marcy', 'marlboro', 'melrose', 'mill brook', 'mitchel', 'monroe', 'morrisania', 'morrisania air rights', 'mott haven', 'ocean hill apartments', 'parkside', 'patterson', 'pelham parkway', 'pink', 'polo grounds towers', 'pomonok', 'queensbridge north', 'queensbridge south', 'rangel', 'ravenswood', 'red hook east', 'red hook west', 'redfern', 'reid apartments', 'richmond terrace', 'riis', 'riis ii', 'robinson', 'roosevelt i', 'rutgers', 'sack wern', 'saint nicholas', 'sedgwick', 'sheepshead bay', 'smith', 'sotomayor', 'soundview', 'south beach', 'south jamaica i', 'stapleton', 'straus', 'stuyvesant gardens i', 'sumner', 'surfside gardens', 'taft', 'throggs neck', 'tilden', 'todt hill', 'tompkins', 'van dyke i', 'vladeck', 'wagner', 'wald', 'washington', 'webster', 'west brighton i', 'whitman', 'wilson', 'woodside', 'woodson', 'wyckoff gardens']",{'1010'}
+https://nychanow.nyc/meet-theresa-bethea-neighborhood-administrator-in-the-bronx/,['throggs neck'],"{'1984', '1969'}"
+https://nychanow.nyc/the-goal-of-a-greener-nycha/,"['washington', 'white']","{'2019', '2040', '2050', '2005', '2030'}"
+https://nychanow.nyc/nychas-capital-projects-completed-in-may/,"['astoria', 'boston secor', 'grant', 'washington']",None
+https://nychanow.nyc/redesigned-annual-recertification-portal-opens-for-all-nycha-residents/,"['lafayette', 'vladeck']","{'2016', '2020'}"
+https://nychanow.nyc/celebrating-the-women-of-cpd/,"['mitchel', 'sotomayor']",None
+https://nychanow.nyc/nycha-caretakers-honored-for-exemplary-service/,"['glenwood', 'marlboro']","{'1997', '1998', '1000'}"
+https://nychanow.nyc/basketball-court-improvements-at-breukelen-houses/,['breukelen'],None
+https://nychanow.nyc/janes-walk-highlights-nychas-sandy-recovery-work/,"['carey gardens', 'coney island', 'haber']","{'2023', '2016'}"
+https://nychanow.nyc/upgraded-basketball-court-opens-at-wagner-houses/,['wagner'],None
+https://nychanow.nyc/free-or-low-cost-high-speed-internet-coming-to-13-nycha-developments/,"['atlantic terminal site 4b', 'baruch', 'de hostos apartments', 'jefferson', 'manhattanville', 'red hook east', 'red hook west', 'riis', 'riis ii', 'wald', 'wyckoff gardens']",{'3000'}
+https://nychanow.nyc/nychas-working-mom-employees-making-a-difference-in-the-community/,"['bronx river', 'brown']",{'2013'}
+https://nychanow.nyc/nycha-brings-vaccination-sites-to-residents/,"['carey gardens', 'castle hill', 'forest', 'gompers', 'johnson', 'mitchel', 'queensbridge north', 'roosevelt i', 'roosevelt ii', 'rutgers', 'saint nicholas', 'van dyke i']",None
+https://nychanow.nyc/meet-nycha-change-ambassador-chaking-moore/,['moore'],"{'2018', '1994'}"
+https://nychanow.nyc/new-pact-projects-to-bring-comprehensive-repairs-to-more-than-9500-residents/,"['clason point gardens', 'johnson', 'metro north plaza', 'ocean hill apartments', 'sack wern', 'wilson']","{'9500', '6200', '4400', '2016', '3064'}"
+https://nychanow.nyc/nycha-employees-pitch-in-to-help-farms-prep-for-new-season/,"['bay view', 'forest', 'pink']","{'2016', '1000'}"
+https://nychanow.nyc/nycha-seeks-partners-to-implement-comprehensive-repairs-and-investments-at-fulton-and-elliott-chelsea-houses/,"['chelsea', 'chelsea addition', 'elliott', 'fulton']","{'2019', '2073', '2021'}"
+https://nychanow.nyc/nycha-completes-solar-installations-at-queensbridge-houses/,"['forest', 'grant', 'queensbridge north', 'queensbridge south']","{'2050', '2006', '2025', '2018'}"
+https://nychanow.nyc/meet-nycha-change-ambassador-krystal-camacho/,['wald'],None
+https://nychanow.nyc/immigrant-heritage-week-celebration-honoring-nychas-language-services-unit/,"['davidson', 'grant']","{'1100', '4000', '1907'}"
+https://nychanow.nyc/celebrating-womens-history-month/,"['moore', 'pink', 'tilden', 'white']","{'8800', '1500', '1627'}"
+https://nychanow.nyc/nychas-family-partnerships-department-connects-residents-to-vital-services/,['johnson'],None
+https://nychanow.nyc/nycha-residents-celebrate-graduation-from-construction-pre-apprenticeship/,"['brown', 'wald']",{'1000'}
+https://nychanow.nyc/celebrating-womens-history-month-honoring-mariana-bracetti/,['bracetti plaza'],"{'1825', '1860'}"
+https://nychanow.nyc/nycha-hosts-community-safety-pop-up-at-bracetti-plaza/,"['bracetti plaza', 'mitchel']",None
+https://nychanow.nyc/nycha-improves-design-of-annual-recertification-portal/,"['lafayette', 'vladeck']",None
+https://nychanow.nyc/new-architecture-and-design-program-from-nycha-city-tech/,['sheepshead bay'],None
+https://nychanow.nyc/making-a-difference-for-residents-3/,['howard'],{'2015'}
+https://nychanow.nyc/isaacs-center-virtual-black-history-month-celebration/,"['holmes towers', 'isaacs']",None
+https://nychanow.nyc/meet-sergio-paneque-nychas-new-chief-procurement-officer-2/,['albany'],{'1400'}
+https://nychanow.nyc/green-city-force/,"['bay view', 'forest', 'howard', 'wagner']","{'2019', '1230', '2016', '2018', '2020'}"
+https://nychanow.nyc/nycha-residents-get-good-jobs-after-nrta-graduation/,['marble hill'],"{'2847', '2010'}"
+https://nychanow.nyc/chair-russs-record-of-success-in-rehabilitating-residents-homes/,['elliott'],"{'1935', '1750'}"
+https://nychanow.nyc/a-blueprint-for-change-in-the-news/,"['grant', 'washington']","{'2020', '1000'}"
+https://nychanow.nyc/public-art-project-on-view-at-fulton-and-chelsea-elliott-houses/,"['chelsea', 'elliott', 'fulton', 'mitchel', 'riis']",{'2021'}
+https://nychanow.nyc/virtual-summit-spotlights-community-safety-projects-at-nycha/,"['brown', 'brownsville', 'castle hill', 'stapleton', 'wagner']",{'2014'}
+https://nychanow.nyc/helping-to-grow-profitable-businesses-for-55-years/,"['jackson', 'rutgers', 'white']","{'1800', '1992', '1966', '2018', '2020'}"
+https://nychanow.nyc/outdoor-space-serves-as-community-resources-hub-for-stapleton-residents/,['stapleton'],"{'2019', '3000'}"
+https://nychanow.nyc/making-a-difference/,['longfellow avenue rehab'],{'2012'}
+https://nychanow.nyc/restoring-historic-art-at-kingsborough-houses/,"['fulton', 'harlem river', 'johnson', 'kingsborough']","{'2123', '1941', '1958', '2021', '0684'}"
+https://nychanow.nyc/progress-on-nychas-pact-program/,"['edenwald', 'wald']","{'1200', '9500', '6200', '7500', '2016', '2020', '3064'}"
+https://nychanow.nyc/nycha-green-city-force-inventory-thousands-of-trees-across-18-campuses/,"['brown', 'brownsville', 'forest']",{'3000'}
+https://nychanow.nyc/training-residents-to-take-care-of-community-health/,"['robinson', 'washington', 'wilson']",{'2021'}
+https://nychanow.nyc/spreading-holiday-cheer-through-holiday-meals/,"['glenwood', 'howard', 'johnson', 'monroe', 'pink', 'robinson', 'south beach', 'tilden', 'todt hill']","{'2018', '1647', '1000'}"
+https://nychanow.nyc/senior-receives-first-tablet-computer-as-christmas-gift-from-nycha/,['vladeck'],None
+https://nychanow.nyc/nychas-skilled-trades-pilot-increases-productivity-by-18/,"['astoria', 'queensbridge north', 'ravenswood']","{'5588', '2020', '2021'}"
+https://nychanow.nyc/hud-awards-nycha-24-7m-for-safety-security-measures/,"['grant', 'jefferson', 'johnson', 'whitman']","{'2019', '1340'}"
+https://nychanow.nyc/chelsea-nonprofit-honors-nycha-residents-for-helping-neighbors-during-pandemic/,"['chelsea', 'elliott', 'fulton', 'johnson', 'wald']","{'1895', '1987', '2020', '2013'}"
+https://nychanow.nyc/nycha-finalizes-deal-to-construct-182-affordable-apartments-in-the-bronx/,['webster'],"{'2018', '1048', '1883', '2021'}"
+https://nychanow.nyc/nycha-farms-close-out-holiday-season-with-winter-cheer-festivities/,"['bay view', 'forest', 'howard', 'wagner']",{'2500'}
+https://nychanow.nyc/housing-lottery-underway-for-100-affordable-van-dyke-iii-development/,"['brown', 'brownsville', 'van dyke i', 'van dyke ii']","{'2476', '2021'}"
+https://nychanow.nyc/nycha-resident-educates-fellow-seniors-on-the-wonders-of-technology/,"['grant', 'meltzer tower']","{'5900', '1000'}"
+https://nychanow.nyc/new-supportive-and-affordable-housing-coming-to-the-bronx/,"['melrose', 'morrisania']","{'5000', '2021'}"
+https://nychanow.nyc/nychas-recycling-reset-pilot-boosts-recycling-rates%e2%80%af/,"['baruch', 'bushwick', 'butler', 'hylan', 'marcy', 'morris i', 'morrisania', 'riis', 'webster']","{'2019', '2020'}"
+https://nychanow.nyc/meet-john-williams-nycha-safety-associate/,"['brevoort', 'tompkins']",{'2013'}
+https://nychanow.nyc/queens-public-library-provides-invaluable-programming-during-the-pandemic/,['grant'],"{'8750', '1896', '5700', '1000'}"
+https://nychanow.nyc/boiler-system-upgrades-on-track-for-winter-debut/,"['long island baptist houses', 'robinson']","{'2050', '2023', '2021'}"
+https://nychanow.nyc/taking-care-and-giving-thanks/,"['adams', 'brevoort', 'bronx river', 'castle hill', 'east new york city line', 'forest', 'gun hill', 'jackson', 'kingsborough', 'mckinley', 'melrose', 'morrisania', 'morrisania air rights', 'robinson', 'sumner', 'throggs neck', 'tompkins']",{'1619'}
+https://nychanow.nyc/skilled-trades-work-order-reform-pilot-underway-in-queens/,"['astoria', 'queensbridge north', 'queensbridge south', 'ravenswood']",{'2021'}
+https://nychanow.nyc/new-pact-projects-bringing-major-repairs-to-another-10000-nycha-residents/,"['bushwick', 'edenwald', 'wald']","{'2019', '2700', '1315', '1000', '4400', '7800', '1300', '6300', '2016', '2021', '2020', '3064'}"
+https://nychanow.nyc/nycha-cuny-scholar-connie-aleman/,['lehman'],"{'2015', '2020', '1000'}"
+https://nychanow.nyc/marcy-houses-celebrates-opening-of-new-community-center/,"['adams', 'marcy', 'tompkins']","{'3200', '2018'}"
+https://nychanow.nyc/announcing-the-2020-nycha-cuny-scholars/,"['amsterdam', 'baruch', 'breukelen', 'brown', 'brownsville', 'cypress hills', 'forest', 'fulton', 'grant', 'gravesend', 'howard', 'lehman', 'lincoln', 'manhattanville', 'metro north plaza', 'mott haven', 'pink', 'straus', 'taft', 'wagner']","{'1000', '2005', '2000', '2018', '2020'}"
+https://nychanow.nyc/harvest-festivals-celebrate-fall-fun-with-safety-in-mind/,"['bay view', 'forest', 'howard', 'wagner']",{'2000'}
+https://nychanow.nyc/digital-vans-get-health-safety-makeover-for-service-in-pandemic/,['johnson'],{'2012'}
+https://nychanow.nyc/former-nycha-resident-awarded-200k-grant-for-sustainability-activism/,"['grant', 'wilson']","{'2020', '2000'}"
+https://nychanow.nyc/nychas-targeted-relief-for-pests/,"['brown', 'grant', 'smith', 'wilson']","{'3564', '2019', '3435', '6094', '2645', '2018', '3500', '2020'}"
+https://nychanow.nyc/growing-nycha-food-entrepreneurs/,"['farragut', 'glenwood', 'gowanus', 'nostrand', 'pomonok', 'queensbridge south', 'ravenswood', 'robinson', 'south beach', 'todt hill', 'washington', 'woodside']","{'2017', '7000', '1344', '2088'}"
+https://nychanow.nyc/nycha-staff-receive-mayors-customer-service-award/,"['astoria', 'wyckoff gardens']",{'2020'}
+https://nychanow.nyc/recognizing-exemplary-members-of-nychas-team/,"['1010 east 178th street', 'astoria', 'breukelen', 'cypress hills', 'glenwood', 'grant', 'jefferson', 'lexington', 'manhattanville', 'marble hill', 'marcy', 'melrose', 'smith', 'washington', 'wyckoff gardens']","{'1010', '1595', '2006', '1500', '2020'}"
+https://nychanow.nyc/nychas-sandy-work-spotlighted-in-resiliency-forum/,['washington'],{'2012'}
+https://nychanow.nyc/working-together-to-transform-nycha/,['brown'],None
+https://nychanow.nyc/nycha-employee-awarded-for-care-of-older-adults/,"['brown', 'patterson']","{'2019', '1990', '2020', '2000'}"
+https://nychanow.nyc/elevator-training-program-helps-workers-ascend/,['chelsea'],"{'3200', '2005'}"
+https://nychanow.nyc/nychas-new-digital-signage-pilot-at-polo-grounds-towers/,['polo grounds towers'],None
+https://nychanow.nyc/public-art-project-launches-at-red-hook-houses/,"['chelsea', 'elliott', 'fulton', 'mitchel', 'riis']",None
+https://nychanow.nyc/sage-thyme-and-rosemary-for-nycha-residents/,"['bronx river', 'jackson', 'morrisania']","{'4464', '2122'}"
+https://nychanow.nyc/nycha-seniors-become-technology-pros/,"['glenwood', 'tilden', 'wagner']","{'3562', '1929', '2004', '1000'}"
+https://nychanow.nyc/nychas-response-to-tropical-storm-isaias/,"['cooper park', 'marcy']",None
+https://nychanow.nyc/get-your-flu-shot-now/,['white'],None
+https://nychanow.nyc/nychas-connected-communities-initiative-wins-wellbeing-cities-award/,['pomonok'],"{'2017', '2400', '2020'}"
+https://nychanow.nyc/going-above-and-beyond/,['1010 east 178th street'],{'1010'}
+https://nychanow.nyc/celebrating-hispanic-heritage/,"['bracetti plaza', 'de hostos apartments', 'hernandez', 'sotomayor']","{'1892', '1891', '1970', '2010', '1954', '1839', '1965', '1903', '1957', '1860', '1825'}"
+https://nychanow.nyc/new-boilers-will-bring-comfort-and-conservation/,['patterson'],None
+https://nychanow.nyc/design-charrette-looks-to-the-future/,"['baruch', 'kingsborough', 'white']",None
+https://nychanow.nyc/responding-to-covid-19-during-my-national-guard-service/,['albany'],None
+https://nychanow.nyc/complete-the-2020-census-3/,"['albany', 'washington']","{'3020', '2020', '8443'}"
+https://nychanow.nyc/sideya-sherman-leads-citys-racial-inclusion-and-equity-taskforce/,['brown'],"{'6000', '2000'}"
+https://nychanow.nyc/a-garden-mural-for-stapleton-houses/,['stapleton'],None
+https://nychanow.nyc/100000-face-masks-donated-to-manhattan-nycha-residents/,"['howard', 'polo grounds towers', 'rangel']","{'2020', '3000', '1000'}"
+https://nychanow.nyc/astoria-houses-invests-in-childrens-futures/,"['astoria', 'ravenswood', 'woodside']","{'1000', '2017', '1340', '2100', '1955'}"
+https://nychanow.nyc/remembering-brandon-hendricks/,"['jackson', 'morrisania']",None
+https://nychanow.nyc/transforming-nycha-new-staff-appointments-and-new-departments/,['gun hill'],"{'1986', '2000', '2010', '2011', '1989'}"
+https://nychanow.nyc/free-masks-distributed-at-baruch-houses/,"['baruch', 'baruch houses addition', 'hylan']",None
+https://nychanow.nyc/checking-in-with-each-other/,"['bland', 'cypress hills', 'farragut', 'grant', 'la guardia']","{'6000', '1000'}"
+https://nychanow.nyc/thanking-nychas-essential-workers/,"['howard', 'ingersoll', 'lafayette', 'marcy', 'sumner', 'tompkins', 'whitman']","{'9000', '2021'}"
+https://nychanow.nyc/complete-the-2020-census/,"['brown', 'grant', 'holmes towers', 'marcy', 'redfern', 'surfside gardens', 'whitman', 'wyckoff gardens']","{'1984', '2020'}"
+https://nychanow.nyc/working-together-for-residents/,['pomonok'],"{'4595', '8692', '6000', '3000', '1500', '2020'}"
+https://nychanow.nyc/practicing-tennis-at-home/,"['brevoort', 'ingersoll', 'lafayette', 'marcy', 'sumner', 'tompkins']",None
+https://nychanow.nyc/nycha-thankstthe-shawn-carter-foundation-and-startsmall-for-helping-residents-buy-groceries/,"['marcy', 'sumner', 'tompkins']",{'3862'}
+https://nychanow.nyc/june-work-anniversaries-3/,"['adams', 'butler', 'grant', 'hernandez', 'johnson', 'moore', 'patterson', 'smith', 'washington', 'wilson']",None
+https://nychanow.nyc/1000-scholarships-for-residents/,['grant'],"{'2020', '1000'}"
+https://nychanow.nyc/nychas-naacp-prayer-walk-for-juneteenth/,"['brevoort', 'johnson', 'tompkins']","{'2020', '1865'}"
+https://nychanow.nyc/standing-together-and-supporting-each-other/,['brown'],{'2019'}
+https://nychanow.nyc/celebrating-nycha-heroes-althea-frontin/,['lehman'],None

@@ -43,6 +43,7 @@ def write_results(url,builidings,dates):
 """ performs text analysis of given article """
 def analyze_article(article,buildings,driver:webdriver.Chrome):
     driver.get(article)
+    time.sleep(6)
     # text is divided into various p tags, so we need all of them
     p_tags = driver.find_element(By.TAG_NAME,"article").find_elements(By.TAG_NAME,"p")
     text = ""
@@ -78,7 +79,7 @@ def __main__():
     urls = [release.find_element(By.TAG_NAME,"a").get_attribute("href") for release in releases] # store each url in list
     for url in urls: # start scraping each month's pr
         driver.get(url) # grab html of pr
-        time.sleep(3)
+        time.sleep(6)
         # fetch all the links on the page
         articles = driver.find_elements(By.TAG_NAME,"article")
         articles = [article.find_element(By.TAG_NAME,"a").get_attribute("href") for article in articles]
@@ -89,8 +90,8 @@ def __main__():
 
 """ for specific cases """
 def unit_test():
-    text = "The funding allowed the planning process for elevator replacement to begin in early April. The timeline for elevator replacement work across the 20 different sites is estimated to range from 49 months (Cassidy-Lafayette Houses) to 81 months (Marcy Houses), depending on the number of elevators that need to be replaced and the age of the relevant developments. All elevator construction work is scheduled to be completed by early December 2028."
-    dates = extract_dates(text)
-    print(dates)
+    driver = init()
+    buildings = fetch_buildings(NYCHA_DATA)
+    analyze_article("https://nychanow.nyc/chair-russ-speaks-at-citylaw-breakfast/",buildings,driver)
 # unit_test()
 __main__()
