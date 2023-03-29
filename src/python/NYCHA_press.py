@@ -38,6 +38,7 @@ def extract_dates(text):
     return set(dates)
 
 
+
 """ performs text analysis of given article """
 def analyze_article(url, buildings, driver: webdriver.Chrome):
     # fetch html for press release portal
