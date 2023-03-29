@@ -27,8 +27,8 @@ def fetch_buildings(file):
 
 """ extract all mentioned dates in article using regex """
 def extract_dates(text):
-    dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
-    dates += re.findall(r'\d{4}',text)
+    dates = re.findall(r'(?:\d{1,2} )?(?:jan|feb|mar|apr|jun|jul|aug|sep|oct|nov|dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
+    # dates += re.findall(r'\d{4}',text)
     if not dates:
         return "None"
     return set(dates)
@@ -90,8 +90,7 @@ def __main__():
 
 """ for specific cases """
 def unit_test():
-    driver = init()
-    buildings = fetch_buildings(NYCHA_DATA)
-    analyze_article("https://nychanow.nyc/chair-russ-speaks-at-citylaw-breakfast/",buildings,driver)
+    text = "july 21, 2021"
+    print(extract_dates(text))
 # unit_test()
 __main__()
