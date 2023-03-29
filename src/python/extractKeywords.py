@@ -11,7 +11,6 @@ from nltk.corpus import stopwords
 from nltk.probability import FreqDist
 
 
-all_text = ""
 urls = ['https://www.nyc.gov/office-of-the-mayor/news/152-16/mayor-de-blasio-dep-that-all-5-300-buildings-have-discontinued-use-most-polluting',
         'https://www.nyc.gov/site/nycha/about/press/pr-2017/nycha-begins-work-on-largest-public-housing-energy-savings-program-in-the-nation-20170406.page',
         'https://www.nyc.gov/site/nycha/about/press/pr-2017/new-lighting-announcement-20170602.page',
@@ -40,7 +39,9 @@ def init():
     return driver
 
 
-def extractKeywords(urls):
+def extractKeywords(urls, driver: webdriver.Chrome):
+
+    all_text = ""
 
     # Open the URLs and extract the text from the articles
     for url in urls:
@@ -48,12 +49,14 @@ def extractKeywords(urls):
         s = soup(driver.page_source, 'html.parser')
         p_text = ""
         for p in s.find_all('p'):
+            # remove all non-alphanumeric and non-whitespace characters
             stripped_text = re.sub(r'[^\w\s]', '', p.text)
+            # append text to p_text, ignore case.
             p_text += " " + stripped_text.lower()
             print(p_text)
         all_text += p_text
 
-    # create tokens
+    # create word tokens from text
     tokens = nltk.word_tokenize(all_text)
 
     # save all_text to csv file
@@ -70,6 +73,12 @@ def extractKeywords(urls):
     # create frequency distribution
     fdist = FreqDist(filtered_tokens)
     print(fdist.most_common(150))
+    input()
 
 
-input()  # so that the window doesn't close
+def __main__():
+    driver = init()
+    extractKeywords(urls, driver)
+
+
+__main__()
