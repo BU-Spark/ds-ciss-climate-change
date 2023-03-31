@@ -20,9 +20,6 @@ def init_stopwords():
         stop_words_set.add(w)
     return stop_words
 
-def analyze_text(text,keywords):
-    pass
-
 def clean_text(text,stop_words):
     text = ' '.join(remove_stopwords(text.split(),stop_words)) # stop words
     text = text.translate(str.maketrans('','',string.punctuation)) # punctuation
@@ -34,7 +31,8 @@ def clean_text(text,stop_words):
 def remove_stopwords(text,stop_words):
     return [t for t in text if t not in stop_words]
 
-def __main__():
+""" collects keywords from articles, counts their number of appearances, and writes them to txt file """
+def write_keywords():
     train = pd.read_csv(TRAIN_PATH)
     keywords = collections.defaultdict(int)
     stop_words = init_stopwords()
@@ -42,7 +40,34 @@ def __main__():
         text = clean_text(text,stop_words)
         for word in text.split():
             keywords[word] += 1
-    res = dict(sorted(keywords.items(),key=lambda pair: pair[1],reverse=True))
-    print(res)
+    keywords = dict(sorted(keywords.items(),key=lambda pair: pair[1],reverse=True))
+    f = open("src/data/keywords_unfiltered.txt",'w')
+    for word in keywords:
+        try:
+            f.write(word+": "+str(keywords[word])+"\n")
+        except:
+            f.write("-: "+str(keywords[word])+"\n")
+    f.close()
 
-__main__()
+""" assigns a score to each keyword based on number of appearances """
+def assign_score():
+    # retrieve the keywords/counts and store in a list
+    f = open("src/data/keywords_filtered.txt")
+    keywords = f.read()
+    f.close()
+    keywords = keywords.split("\n")
+    total_count = 0
+    scores = collections.defaultdict(int)
+    # first pass to get the total count
+    for pair in keywords:
+        keyword = pair[:pair.index(':')]
+        num_appears = pair[pair.index(':')+1:]
+        total_count += int(num_appears)
+    # second pass to calculate the scores
+    for pair in keywords:
+        keyword = pair[:pair.index(':')]
+        num_appears = pair[pair.index(':')+1:]
+        scores[keyword] = int(num_appears)/total_count
+    print(scores)
+
+assign_score()
