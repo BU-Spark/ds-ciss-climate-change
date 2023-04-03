@@ -2,13 +2,15 @@ import re
 import time
 import pandas as pd
 import csv
+from train import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
 URL = "http://nychanow.nyc/issues/"
 NYCHA_DATA = "src/data/NYCHA.csv"
-RESULTS_PATH = "src/data/nychanow_results.csv"
+PASS_ONE_PATH = "src/data/nychanow_pass_one.csv"
+PASS_TWO_PATH = "src/data/nychanow_pass_two.csv"
 
 """ initializes selenium"""
 def init():
@@ -35,7 +37,7 @@ def extract_dates(text):
 
 """ write url, buildings, dates to csv """
 def write_results(url,builidings,dates):
-    with open (RESULTS_PATH,'a') as csvfile:
+    with open (PASS_ONE_PATH,'a') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow([url,builidings,dates])
     csvfile.close()
@@ -61,11 +63,13 @@ def analyze_article(article,buildings,driver:webdriver.Chrome):
         dates = extract_dates(text)
         write_results(article,mentioned,dates)
     
-""" the worker function """
-def __main__():
+
+
+""" collects all nychanow articles that mention any NYCHA building, writes results to csv """
+def pass_one():
     # add column names to csv file
     columns = ['url','buildings','dates']
-    with open (RESULTS_PATH,'w') as csvfile:
+    with open (PASS_ONE_PATH,'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(columns)
     csvfile.close()
@@ -88,9 +92,63 @@ def __main__():
             analyze_article(article,buildings,driver)
             time.sleep(5)
 
+""" given a url, return the cleaned text of the article """
+def retrieve_text(url):
+    driver = init()
+    driver.get(url)
+    time.sleep(6)
+    # text is divided into various p tags, so we need all of them
+    p_tags = driver.find_element(By.TAG_NAME,"article").find_elements(By.TAG_NAME,"p")
+    text = ""
+    for p in p_tags:
+        # if p tag has text, remove punc and add it 
+        if p.text and not p.text.isspace():
+            stripped_text = re.sub(r'[^\w\s]','',p.text)
+            text += " " + stripped_text.lower()
+    stopwords = init_stopwords()
+    text = clean_text(text,stopwords)
+    return text
+
+""" given cleaned text of an article, return a relevancy score """
+def calculate_score(text:str,score_dict:collections.defaultdict):
+    score = 0
+    text = text.split()
+    for word in text:
+        score += score_dict[word]
+    return score
+
+""" assigns relevancy scores to results from pass one """
+def pass_two():
+    score_dict = assign_score()
+    scores_list = []
+    with open(PASS_ONE_PATH) as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if row and row[0] != "url":
+                text = retrieve_text(row[0])
+                score = calculate_score(text,score_dict)
+                scores_list.append(score)
+    results = pd.read_csv(PASS_ONE_PATH)
+    results['relevance score'] = scores_list
+    results = results.sort_values(by='relevance score',ascending=False)
+    results.to_csv(PASS_TWO_PATH)
+
+    # iterate through the results from pass one
+        # for each article, get the html + get the text + clean the text
+        # calculate score of text
+        # add score as column in df
+    # write df to new csv
+
+def __main__():
+    pass_two()
+
+
+
+
+
 """ for specific cases """
 def unit_test():
     text = "july 21, 2021"
     print(extract_dates(text))
-# unit_test()
+
 __main__()

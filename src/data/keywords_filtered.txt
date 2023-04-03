@@ -36,11 +36,8 @@ goal: 21
 working: 21
 provide: 21
 service: 21
-blasio: 20
-city�s: 20
 better: 20
 improve: 20
-east: 20
 improvement: 19
 gas: 19
 epcs: 18
@@ -227,7 +224,6 @@ preventing: 3
 cleanest: 3
 vulnerable: 3
 achieve: 3
-fully: 3
 dioxide: 3
 nitrogen: 3
 ghg: 3
@@ -268,8 +264,6 @@ current: 3
 planning: 3
 spending: 3
 operate: 3
-central: 3
-medium: 3
 voltage: 3
 polluting: 2
 oxide: 2

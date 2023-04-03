@@ -68,6 +68,4 @@ def assign_score():
         keyword = pair[:pair.index(':')]
         num_appears = pair[pair.index(':')+1:]
         scores[keyword] = int(num_appears)/total_count
-    print(scores)
-
-assign_score()
+    return scores
