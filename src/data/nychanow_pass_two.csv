@@ -1,4 +1,4 @@
 ,url,buildings,dates,relevance score
-2,https://nychanow.nyc/celebrating-social-work-month-meet-marina-oteiza-director-of-family-partnerships/,"['grant', 'tompkins']",None,0.35210396039603953
-0,https://nychanow.nyc/celebrating-womens-history-month-2/,"['johnson', 'riis']",None,0.2837252475247524
-1,https://nychanow.nyc/meet-the-coaching-and-mentoring-leadership-academy-participants/,['isaacs'],{'january 2023'},0.0900371287128713
+2,https://nychanow.nyc/celebrating-social-work-month-meet-marina-oteiza-director-of-family-partnerships/,"['grant', 'tompkins']","{'2014', '1978', '1970'}",0.3347772277227722
+0,https://nychanow.nyc/celebrating-womens-history-month-2/,"['johnson', 'riis']",None,0.29641089108910884
+1,https://nychanow.nyc/meet-the-coaching-and-mentoring-leadership-academy-participants/,['isaacs'],"{'1991', 'January 2023', '2023', '2020'}",0.10643564356435646

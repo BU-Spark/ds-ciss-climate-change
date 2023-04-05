@@ -126,18 +126,25 @@ def calculate_score(text:str,score_dict:collections.defaultdict):
 
 """ assigns relevancy scores to results from pass one """
 def pass_two():
-    score_dict = assign_score()
-    scores_list = []
+    score_dict = assign_score() # dictionary with structure { keyword: score }
+    # stores scores and dates for df modification later
+    scores_list = [] 
+    dates_list = []
     with open(PASS_ONE_PATH) as f:
         reader = csv.reader(f)
+        # for each article, calculate score and extract dates
         for row in reader:
             if row and row[0] != "url":
                 text = retrieve_text(row[0])
+                dates = extract_dates(text)
+                dates_list.append(dates)
                 stopwords = init_stopwords()
                 cleaned_text = clean_text(text,stopwords)
                 score = calculate_score(cleaned_text,score_dict)
                 scores_list.append(score)
+    # add scores and dates to df, write it to a new csv file
     results = pd.read_csv(PASS_ONE_PATH)
+    results['dates'] = dates_list
     results['relevance score'] = scores_list
     results = results.sort_values(by='relevance score',ascending=False)
     results.to_csv(PASS_TWO_PATH)
@@ -161,5 +168,5 @@ def unit_test():
     text = f.read()
     print(extract_dates(text))
 
-unit_test()
-# __main__()
+# unit_test()
+__main__()
