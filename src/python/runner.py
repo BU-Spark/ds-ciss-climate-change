@@ -29,11 +29,21 @@ def fetch_buildings(file):
 
 """ extract all mentioned dates in article using regex """
 def extract_dates(text):
-    dates = re.findall(r'(?:\d{1,2} )?(?:jan|feb|mar|apr|jun|jul|aug|sep|oct|nov|dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
-    # dates += re.findall(r'\d{4}',text)
+    dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|nov|dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
+    dates += re.findall(r'\d{4}',text)
     if not dates:
         return "None"
-    return set(dates)
+    # get rid of 4 digit numbers that aren't likely years
+    set_dates = set()
+    for date in dates:
+        # print(len(date) == 4 and (int(date) >= 2100 or int(date) < 1900))
+        if len(date) != 4:
+            set_dates.add(date)
+        elif len(date) == 4 and (int(date) < 2100 and int(date) >= 1900):
+            set_dates.add(date)
+    if not set_dates:
+        return None
+    return set_dates
 
 """ write url, buildings, dates to csv """
 def write_results(url,builidings,dates):
@@ -92,7 +102,7 @@ def pass_one():
             analyze_article(article,buildings,driver)
             time.sleep(5)
 
-""" given a url, return the cleaned text of the article """
+""" given a url, return the text of the article """
 def retrieve_text(url):
     driver = init()
     driver.get(url)
@@ -103,10 +113,7 @@ def retrieve_text(url):
     for p in p_tags:
         # if p tag has text, remove punc and add it 
         if p.text and not p.text.isspace():
-            stripped_text = re.sub(r'[^\w\s]','',p.text)
-            text += " " + stripped_text.lower()
-    stopwords = init_stopwords()
-    text = clean_text(text,stopwords)
+            text += " " + p.text
     return text
 
 """ given cleaned text of an article, return a relevancy score """
@@ -126,7 +133,9 @@ def pass_two():
         for row in reader:
             if row and row[0] != "url":
                 text = retrieve_text(row[0])
-                score = calculate_score(text,score_dict)
+                stopwords = init_stopwords()
+                cleaned_text = clean_text(text,stopwords)
+                score = calculate_score(cleaned_text,score_dict)
                 scores_list.append(score)
     results = pd.read_csv(PASS_ONE_PATH)
     results['relevance score'] = scores_list
@@ -148,7 +157,9 @@ def __main__():
 
 """ for specific cases """
 def unit_test():
-    text = "july 21, 2021"
+    f = open("src/text/test.txt",encoding="UTF-8")
+    text = f.read()
     print(extract_dates(text))
 
-__main__()
+unit_test()
+# __main__()
