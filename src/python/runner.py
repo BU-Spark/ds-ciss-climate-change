@@ -27,23 +27,36 @@ def fetch_buildings(file):
     building_names = df.iloc[:,1].tolist()
     return building_names
 
-""" extract all mentioned dates in article using regex """
+""" extract and categorize all mentioned dates in article using regex """
 def extract_dates(text):
-    dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|nov|dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
-    dates += re.findall(r'\d{4}',text)
-    if not dates:
-        return "None"
+    res = {} # stores the start, end, and misc dates 
+    # extracting start dates
+    startDate = re.findall(r'(?: started in |began in | began at | began at | initiated at | launched in | launched at | kicked off in | kicked off at | established in)\d{4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}', text)
+    if not startDate:
+        startDate = "None"
+    # extract end dates
+    endDate = re.findall(r'(?: ended in | completed in |finished in | constructed in | built in | upgraded in | repaired in | wrapped up in | wrapped up at | terminated in | ended at | completed at | finished at | constructed at | built at | upgraded at | repaired at | terminated at | renovated at | renovated in )\d{4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}', text)
+    if not endDate:
+        endDate = "None"
+    # extract misc dates
+    misc_dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|nov|dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
+    misc_dates += re.findall(r'\d{4}',text)
     # get rid of 4 digit numbers that aren't likely years
-    set_dates = set()
-    for date in dates:
-        # print(len(date) == 4 and (int(date) >= 2100 or int(date) < 1900))
+    set_misc_dates = set()
+    for date in misc_dates:
         if len(date) != 4:
-            set_dates.add(date)
+            set_misc_dates.add(date)
         elif len(date) == 4 and (int(date) < 2100 and int(date) >= 1900):
-            set_dates.add(date)
-    if not set_dates:
-        return None
-    return set_dates
+            set_misc_dates.add(date)
+    if not set_misc_dates:
+        set_misc_dates = "None"
+    res["start"] = startDate
+    res["end"] = endDate
+    res["misc"] = set_misc_dates
+    return res
+
+
+    
 
 """ write url, buildings, dates to csv """
 def write_results(url,builidings,dates):
@@ -129,7 +142,9 @@ def pass_two():
     score_dict = assign_score() # dictionary with structure { keyword: score }
     # stores scores and dates for df modification later
     scores_list = [] 
-    dates_list = []
+    start_dates_list = []
+    end_dates_list = []
+    misc_dates_list = []
     with open(PASS_ONE_PATH) as f:
         reader = csv.reader(f)
         # for each article, calculate score and extract dates
@@ -137,30 +152,25 @@ def pass_two():
             if row and row[0] != "url":
                 text = retrieve_text(row[0])
                 dates = extract_dates(text)
-                dates_list.append(dates)
+                print(dates)
+                start_dates_list.append(dates['start'])
+                end_dates_list.append(dates['end'])
+                misc_dates_list.append(dates['misc'])
                 stopwords = init_stopwords()
                 cleaned_text = clean_text(text,stopwords)
                 score = calculate_score(cleaned_text,score_dict)
                 scores_list.append(score)
     # add scores and dates to df, write it to a new csv file
     results = pd.read_csv(PASS_ONE_PATH)
-    results['dates'] = dates_list
+    results['dates'] = start_dates_list
+    results['end'] = end_dates_list
+    results['all dates'] = misc_dates_list
     results['relevance score'] = scores_list
     results = results.sort_values(by='relevance score',ascending=False)
     results.to_csv(PASS_TWO_PATH)
 
-    # iterate through the results from pass one
-        # for each article, get the html + get the text + clean the text
-        # calculate score of text
-        # add score as column in df
-    # write df to new csv
-
 def __main__():
     pass_two()
-
-
-
-
 
 """ for specific cases """
 def unit_test():
