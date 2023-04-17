@@ -8,9 +8,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from methods import *
 
-TRAIN_PATH = "src/data/train.csv"
-TRAIN_CREATED = 'src/data/train_created.csv'
+TRAIN_PATH = "src/data/train.csv" # articles that are ONLY energy-related
+TRAIN_COMPLETE_PATH = "src/data/train_complete.csv" # articles that are BOTH energy and non-energy-related
+TRAIN_CREATED = 'src/data/train_created.csv' # the output of create_train() -- like train_complete but with more columns
 
+""" functions for text analysis """
 def lemmatize_words(text):
     lemmatizer = WordNetLemmatizer()
     return " ".join([lemmatizer.lemmatize(word) for word in text.split()])
@@ -73,6 +75,7 @@ def assign_score():
         scores[keyword] = int(num_appears)/total_count
     return scores
 
+""" add columns to training data for model's use """
 def create_train():
     score_dict = assign_score() # dictionary with structure { keyword: score }
     # stores scores and dates for df modification later
@@ -81,7 +84,7 @@ def create_train():
     start_dates_list = []
     end_dates_list = []
     misc_dates_list = []
-    with open(TRAIN_PATH,encoding="UTF-8") as f:
+    with open(TRAIN_COMPLETE_PATH,encoding="UTF-8") as f:
         reader = csv.reader(f)
         # for each article, calculate score and extract dates/buildings
         for row in reader:
@@ -101,7 +104,7 @@ def create_train():
                 buildings_mentioned = mentioned_buildings(text)
                 buildings_list.append(buildings_mentioned)
     # add scores, buildings, and dates to df; write it to a new csv file
-    results = pd.read_csv(TRAIN_PATH)
+    results = pd.read_csv(TRAIN_COMPLETE_PATH)
     results = results.drop(['text'],axis=1) # get rid of the text column
     results['buildings'] = buildings_list
     results['start'] = start_dates_list
