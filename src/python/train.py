@@ -2,11 +2,14 @@ import pandas as pd
 import collections
 import nltk
 import string
+import csv
 from string import digits
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from methods import *
 
 TRAIN_PATH = "src/data/train.csv"
+TRAIN_CREATED = 'src/data/train_created.csv'
 
 def lemmatize_words(text):
     lemmatizer = WordNetLemmatizer()
@@ -69,3 +72,43 @@ def assign_score():
         num_appears = pair[pair.index(':')+1:]
         scores[keyword] = int(num_appears)/total_count
     return scores
+
+def create_train():
+    score_dict = assign_score() # dictionary with structure { keyword: score }
+    # stores scores and dates for df modification later
+    scores_list = [] 
+    buildings_list = []
+    start_dates_list = []
+    end_dates_list = []
+    misc_dates_list = []
+    with open(TRAIN_PATH,encoding="UTF-8") as f:
+        reader = csv.reader(f)
+        # for each article, calculate score and extract dates/buildings
+        for row in reader:
+            if row and row[0] != "url":
+                text = row[1]
+                dates = extract_dates(text)
+                # for adding dates to csv
+                start_dates_list.append(dates['start'])
+                end_dates_list.append(dates['end'])
+                misc_dates_list.append(dates['misc'])
+                # for adding score to csv
+                stopwords = init_stopwords()
+                cleaned_text = clean_text(text,stopwords)
+                score = calculate_score(cleaned_text,score_dict)
+                scores_list.append(score)
+                # for adding buildings to csv
+                buildings_mentioned = mentioned_buildings(text)
+                buildings_list.append(buildings_mentioned)
+    # add scores, buildings, and dates to df; write it to a new csv file
+    results = pd.read_csv(TRAIN_PATH)
+    results = results.drop(['text'],axis=1) # get rid of the text column
+    results['buildings'] = buildings_list
+    results['start'] = start_dates_list
+    results['end'] = end_dates_list
+    results['all dates'] = misc_dates_list
+    results['relevance score'] = scores_list
+    results = results.sort_values(by='relevance score',ascending=False)
+    results.to_csv(TRAIN_CREATED)
+
+create_train()

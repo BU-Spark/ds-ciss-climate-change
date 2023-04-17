@@ -39,7 +39,7 @@ def extract_dates(text):
     if not endDate:
         endDate = "None"
     # extract misc dates
-    misc_dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|nov|dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
+    misc_dates = re.findall(r'(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* (?:\d{1,2}, )?\d{2,4}',text)
     misc_dates += re.findall(r'\d{4}',text)
     # get rid of 4 digit numbers that aren't likely years
     set_misc_dates = set()
@@ -85,8 +85,15 @@ def analyze_article(article,buildings,driver:webdriver.Chrome):
     if mentioned: # if NYCHA buildings mentioned, get dates and write all data to csv
         dates = extract_dates(text)
         write_results(article,mentioned,dates)
-    
 
+""" what buildings did the article mention, if any? """ 
+def mentioned_buildings(text):
+    buildings = fetch_buildings(NYCHA_DATA)
+    res = []
+    for b in buildings:
+        if b.upper() in text.upper():
+            res.append(b)
+    return res
 
 """ collects all nychanow articles that mention any NYCHA building, writes results to csv """
 def pass_one():
@@ -162,7 +169,7 @@ def pass_two():
                 scores_list.append(score)
     # add scores and dates to df, write it to a new csv file
     results = pd.read_csv(PASS_ONE_PATH)
-    results['dates'] = start_dates_list
+    results['start'] = start_dates_list
     results['end'] = end_dates_list
     results['all dates'] = misc_dates_list
     results['relevance score'] = scores_list
