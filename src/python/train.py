@@ -113,5 +113,3 @@ def create_train():
     results['relevance score'] = scores_list
     results = results.sort_values(by='relevance score',ascending=False)
     results.to_csv(TRAIN_CREATED)
-
-create_train()
