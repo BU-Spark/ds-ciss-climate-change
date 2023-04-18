@@ -4,42 +4,16 @@ import re
 import csv
 import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup as soup
+from methods import *
 
 
 URL = "https://www.nyc.gov/site/nycha/about/press/press-releases.page"
+NYCHA_DATA = "data/NYCHA.csv"
 # Read the keywords from the CSV file using pandas
 keywords_df = pd.read_csv('data/keywords.csv', header=None, names=['Keyword'])
 keywords = keywords_df['Keyword'].tolist()
-
-
-""" initializes selenium"""
-
-
-def init():
-    chrome_options = Options()
-    chrome_options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    return driver
-
-
-""" extract start date and end date of projects in article using regex """
-
-
-def extract_start_dates(text):
-    startDate = re.findall(
-        r'(?:  built at | built in | started in |began in | began at | began at | initiated at | launched in | launched at | kicked off in | kicked off at | established in)\d{4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}', text)
-    return startDate
-
-
-def extract_end_dates(text):
-    endDate = re.findall(
-        r'(?: ended in | completed in |finished in | constructed in | upgraded in | repaired in | wrapped up in | wrapped up at | terminated in | ended at | completed at | finished at | constructed at | upgraded at | repaired at | terminated at | renovated at | renovated in )\d{4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}', text)
-    return endDate
-
 
 """ performs text analysis of given article """
 
@@ -73,7 +47,7 @@ def exportCSV(url, zip_list, driver: webdriver.Chrome):
     writer = csv.writer(csvFile)
     writer.writerow(["2021-2023 Press Releases"])
     writer.writerow(["Article Name", "Article URL", "Keywords",
-                    "Start Date", "End Date", "Project"])
+                    "Start Date", "End Date", "All Dates", "Buildings"])
     try:
         # click each article link
         for name, article_url in zip_list:
@@ -90,6 +64,8 @@ def exportCSV(url, zip_list, driver: webdriver.Chrome):
             keys = []
             startDate = []
             endDate = []
+            allDates = []
+            buildings = []
             data = []
             for key in keywords:
                 # match whole words only from keywords list
@@ -106,8 +82,13 @@ def exportCSV(url, zip_list, driver: webdriver.Chrome):
                     print("Start Date:", startDate)
                     endDate = extract_end_dates(p_text)
                     print("End Date:", endDate)
-                    data = [article_name, articleURL, keys, startDate, endDate]
-            if startDate or endDate:
+                    allDates = extract_all_dates(p_text)
+                    print("All Dates:", allDates)
+                    buildings = mentioned_buildings(p_text)
+                    print("Building:", buildings)
+                    data = [article_name, articleURL,
+                            keys, startDate, endDate, allDates, buildings]
+            if startDate or endDate or allDates:
                 writer.writerow(data)
     finally:
         csvFile.close()

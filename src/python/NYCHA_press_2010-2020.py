@@ -5,44 +5,14 @@ import csv
 import pandas as pd
 from urllib.parse import urljoin
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import WebDriverException
 from bs4 import BeautifulSoup as soup
+from methods import *
 
-
-# Read URLs
+# Read URLs and keywords
 URLS_df = pd.read_csv('data/URLS.csv', header=None, names=['url'])
 URLS = URLS_df['url'].tolist()
-
-# Read the keywords from the CSV file using pandas
-keywords_df = pd.read_csv('data/keywords.csv', header=None, names=['Keyword'])
-keywords = keywords_df['Keyword'].tolist()
-
-""" initializes selenium"""
-
-
-def init():
-    chrome_options = Options()
-    chrome_options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    return driver
-
-
-""" extract start date and end date of projects in article using regex """
-
-
-def extract_start_dates(text):
-    startDate = re.findall(
-        r'(?:  built at | built in | started in |began in | began at | began at | initiated at | launched in | launched at | kicked off in | kicked off at | established in)\d{4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}', text)
-    return startDate
-
-
-def extract_end_dates(text):
-    endDate = re.findall(
-        r'(?: ended in | completed in |finished in | constructed in | upgraded in | repaired in | wrapped up in | wrapped up at | terminated in | ended at | completed at | finished at | constructed at | upgraded at | repaired at | terminated at | renovated at | renovated in )\d{4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{4}', text)
-    return endDate
-
+keywords = readKeywords()
 
 """ performs text analysis of given article """
 
@@ -77,7 +47,7 @@ def analyze_article(URLS, driver: webdriver.Chrome):
         # add year info as divider between each table
         writer.writerow([url[43:47]])
         writer.writerow(["Article Name", "Article URL", "Keywords",
-                        "Start Date", "End Date", "Project"])
+                        "Start Date", "End Date", "All Dates", "Buildings"])
         try:
             # get each article link from article_url_list, no need to click.
             for name, article_url in zip_list:
@@ -92,6 +62,8 @@ def analyze_article(URLS, driver: webdriver.Chrome):
                 keys = []
                 startDate = []
                 endDate = []
+                allDates = []
+                buildings = []
                 data = []
                 for key in keywords:
                     # match whole words only from keywords list
@@ -110,9 +82,13 @@ def analyze_article(URLS, driver: webdriver.Chrome):
                         print("Start Date:", startDate)
                         endDate = extract_end_dates(p_text)
                         print("End Date:", endDate)
+                        allDates = extract_all_dates(p_text)
+                        print("All Dates:", allDates)
+                        buildings = mentioned_buildings(p_text)
+                        print("Building:", buildings)
                         data = [article_name, articleURL,
-                                keys, startDate, endDate]
-                if startDate or endDate:
+                                keys, startDate, endDate, allDates, buildings]
+                if startDate or endDate or allDates:
                     writer.writerow(data)
         # some links are invalid
         except WebDriverException as e:
@@ -128,10 +104,3 @@ def __main__():
 
 
 __main__()
-
-# What I completed: 1. Added URL info. 2. Fixed some bugs & Handled edge cases/errors.
-# 3. scraped data from 2010-2020 press releases.
-# Next steps:
-# 1. Discuss with clients about the keyword list.
-# 2. Ask clients for more specific needs on dates, e.g., maybe put a boundary on the years, etc.
-# 3. Scrape capital projects

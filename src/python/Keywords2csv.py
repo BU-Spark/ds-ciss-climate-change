@@ -1,50 +1,14 @@
 import pandas as pd
 
-# Your keyword list
-keywords = [
-    "energy",
-    "heating",
-    "water",
-    "heat",
-    "boilers",
-    "air",
-    "sustainability",
-    "reduce",
-    "efficiency",
-    "hot",
-    "lighting",
-    "quality",
-    "oil",
-    "steam",
-    "costs",
-    "savings",
-    "boiler",
-    "service",
-    "emissions",
-    "cost",
-    "repairs",
-    "repair",
-    "performance",
-    "greenhouse",
-    "gas",
-    "commitment",
-    "conservation",
-    "largest",
-    "upgrade",
-    "apartments",
-    "replacement",
-    "fuel",
-    "carbon",
-    "initiative",
-    "power",
-    "reduction",
-    "climate",
-    "services",
-    "homes",
-    "environmental"
-]
+# Pull down Daniel's keywords list and convert it to a list
+f = open("data/keywords_filtered.txt")
+keywords = f.read()
+f.close()
+output = keywords.split("\n")
+keywords = [item.split(':')[0] for item in output]
+# print(keywords)
 
 # Save the keyword list to a CSV file
-with open('keywords.csv', 'w') as f:
+with open('data/keywords.csv', 'w') as f:
     for keyword in keywords:
         f.write(f"{keyword}\n")
