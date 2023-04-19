@@ -11,15 +11,19 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 # load training data into pandas df
 X_train = pd.read_csv("src/data/train_created.csv")
 X_test = pd.read_csv("src/data/nychanow_pass_two.csv")
+X_test['no. buildings mentioned'] = X_test.apply(lambda row: len(row['buildings']),axis=1)
 
 # feature extraction
-X_train_processed = np.array(X_train['relevance score']).reshape(-1,1)
+X_train_processed = X_train.drop(columns=['url','class','buildings','start','end','all dates'])
 
 # learn the model
 Y_train = X_train['class']
-model = KNeighborsClassifier().fit(X_train_processed,Y_train)
+model = LogisticRegression().fit(X_train_processed, Y_train)
+# model = KNeighborsClassifier(n_neighbors=10).fit(X_train_processed,Y_train)
+# model = DecisionTreeClassifier().fit(X_train_processed, Y_train)
+
 
 # make predictions
-X_test = np.array(X_test['relevance score']).reshape(-1,1)
+X_test = X_test.drop(columns=['url','buildings','start','end','all dates','dates'])
 Y_test_predictions = model.predict(X_test)
 print(Y_test_predictions)

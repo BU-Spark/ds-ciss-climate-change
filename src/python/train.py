@@ -111,5 +111,7 @@ def create_train():
     results['end'] = end_dates_list
     results['all dates'] = misc_dates_list
     results['relevance score'] = scores_list
+    results['no. buildings mentioned'] = results.apply(lambda row: len(row['buildings']),axis=1)
     results = results.sort_values(by='relevance score',ascending=False)
     results.to_csv(TRAIN_CREATED)
+create_train()
