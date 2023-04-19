@@ -2,12 +2,11 @@ import re
 import csv
 import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup as soup
 import nltk
 from nltk.corpus import stopwords
 from nltk.probability import FreqDist
+from methods import *
 
 
 urls = ['https://www.nyc.gov/office-of-the-mayor/news/152-16/mayor-de-blasio-dep-that-all-5-300-buildings-have-discontinued-use-most-polluting',
@@ -25,17 +24,6 @@ urls = ['https://www.nyc.gov/office-of-the-mayor/news/152-16/mayor-de-blasio-dep
         'https://www.nyc.gov/site/nycha/about/press/pr-2017/howard-ave-20170511.page',
         'http://nychanow.nyc/boiler-system-upgrades-on-track-for-winter-debut/',
         'https://bklyner.com/103-million-nycha-heat-and-efficiency-investment-wont-repair-boilers/']
-
-
-""" initializes selenium"""
-
-
-def init():
-    chrome_options = Options()
-    chrome_options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    return driver
 
 
 def extractKeywords(urls, driver: webdriver.Chrome):

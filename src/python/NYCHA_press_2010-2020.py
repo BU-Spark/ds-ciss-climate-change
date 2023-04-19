@@ -95,7 +95,7 @@ def analyze_article(URLS, driver: webdriver.Chrome):
             print(f"An error occurred while processing URL {article_url}: {e}")
         finally:
             csvFile.close()
-    input()  # so that the window doesn't close
+    input()
 
 
 def __main__():

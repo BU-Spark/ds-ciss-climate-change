@@ -72,3 +72,5 @@ def readKeywords():
         'data/keywords.csv', header=None, names=['Keyword'])
     keywords = keywords_df['Keyword'].tolist()
     return keywords
+
+
