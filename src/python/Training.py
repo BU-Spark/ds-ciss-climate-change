@@ -6,37 +6,8 @@ from methods import *
 
 # read keywords and urls
 keywords = readKeywords()
-urls = ['https://www.nyc.gov/office-of-the-mayor/news/152-16/mayor-de-blasio-dep-that-all-5-300-buildings-have-discontinued-use-most-polluting',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2017/nycha-begins-work-on-largest-public-housing-energy-savings-program-in-the-nation-20170406.page',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2017/new-lighting-announcement-20170602.page',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2018/pr-20181023.page',
-        'https://betterbuildingssolutioncenter.energy.gov/showcase-projects/new-york-city-housing-authority-344-east-28th-street',
-        'http://nychanow.nyc/105-million-in-energy-efficiency-upgrades-coming-to-15-developments/',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2012/nycha-begins-69-million-in-capital-improvements-and-renovations.page',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2016/nycha-seeks-a-partner-for-state-of-the-art-microgrid-20160622.page',
-        'https://www.nyrealestatelawblog.com/manhattan-litigation-blog/2014/march/chuck-pushed-for-new-boiler-funding/',
-        'https://citylimits.org/2019/10/23/climate-control-is-a-year-round-issue-at-nycha-especially-for-seniors/',
-        'https://www.nyc.gov/office-of-the-mayor/news/043-18/mayor-de-blasio-dedicates-13-million-speed-nycha-response-heat-outages-replace-equipment',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2016/NYCHA-Reduces-Energy-Demand-Increases-Efficiency-Through-Collaboration-With-Con-Edison-20160425.page',
-        'https://www.nyc.gov/site/nycha/about/press/pr-2017/howard-ave-20170511.page',
-        'http://nychanow.nyc/boiler-system-upgrades-on-track-for-winter-debut/',
-        'https://bklyner.com/103-million-nycha-heat-and-efficiency-investment-wont-repair-boilers/']
-
-names = ['Mayor de Blasio and DEP Announce That All 5,300 Buildings Have Discontinued Use of Most Polluting Heating Oil, Leading to Significantly Cleaner Air',
-         'NYCHA BEGINS WORK ON LARGEST PUBLIC HOUSING ENERGY SAVINGS PROGRAM IN THE NATION',
-         'NYCHA Announces Completion of New Lighting at 18 Developments in Brooklyn, Benefitting More Than 36,000 Residents',
-         'NYCHA ANNOUNCES NEW $104.6 MILLION ENERGY CONTRACT TO IMPROVE EFFICIENCY, HEATING AT 15 DEVELOPMENTS',
-         'NEW YORK CITY HOUSING AUTHORITY: 344 EAST 28TH STREET',
-         '$105 Million in Energy-Efficiency Upgrades Coming to 15 Developments',
-         'NYCHA Begins $69 Million in Capital Improvements and Renovations',
-         'NYCHA SEEKS A PARTNER FOR STATE-OF-THE-ART MICROGRID; HEAT & POWER GENERATION SYSTEM AT RED HOOK HOUSES',
-         'CHUCK PUSHED FOR NEW BOILER FUNDING',
-         'Climate Control is a Year-Round Issue at NYCHA, Especially for Seniors',
-         'Mayor de Blasio Dedicates $13 Million to Speed NYCHA Response to Heat Outages and Replace Equipment at Hardest-Hit Buildings',
-         'NYCHA REDUCES ENERGY DEMAND, INCREASES EFFICIENCY THROUGH COLLABORATION WITH CON EDISON',
-         'NYCHA’S HOWARD AVENUE RECEIVES $1 MILLION ENERGY-EFFICIENCY UPGRADES AS FIRST PROJECT IN PILOT BY NEW YORK STATE WEATHERIZATION ASSISTANCE PROGRAM',
-         'Boiler System Upgrades on Track for Winter Debut',
-         '$103 Million NYCHA Heat and Efficiency Investment Won’t Repair Boilers']
+names, urls = readNames()
+scoredict = assign_score()
 
 
 def analyze_article(urls, driver: webdriver.Chrome):
@@ -45,7 +16,7 @@ def analyze_article(urls, driver: webdriver.Chrome):
     writer = csv.writer(csvFile)
     writer.writerow(["Training Dataset"])
     writer.writerow(["Article Name", "Article URL", "Keywords", "Start Date",
-                     "End Date", "All Dates", "Buildings"])
+                     "End Date", "All Dates", "Buildings", "Scores"])
 
     try:
         # Open the URLs and extract the text from the articles
@@ -66,10 +37,11 @@ def analyze_article(urls, driver: webdriver.Chrome):
             endDate = []
             allDates = []
             buildings = []
+            scores = []
             data = []
             for key in keywords:
-                # find keywords in the article TITLE
-                if re.search(r'\b' + re.escape(key) + r'\b', name, re.IGNORECASE):
+                # find keywords in the article body
+                if re.search(r'\b' + re.escape(key) + r'\b', p_text, re.IGNORECASE):
                     print("keyword:", key)
                     print("URL", url)
                     keys.append(key)
@@ -86,8 +58,10 @@ def analyze_article(urls, driver: webdriver.Chrome):
                     print("All Dates:", allDates)
                     buildings = mentioned_buildings(p_text)
                     print("Building:", buildings)
+                    scores = calculate_score(p_text, scoredict)
+                    print("Scores:", scores)
                     data = [article_name, articleURL, keys, startDate, endDate,
-                            allDates, buildings]
+                            allDates, buildings, scores]
             if startDate or endDate or allDates:
                 writer.writerow(data)
     finally:

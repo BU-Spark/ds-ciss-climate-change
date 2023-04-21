@@ -13,6 +13,8 @@ from methods import *
 URLS_df = pd.read_csv('data/URLS.csv', header=None, names=['url'])
 URLS = URLS_df['url'].tolist()
 keywords = readKeywords()
+scoredict = assign_score()
+
 
 """ performs text analysis of given article """
 
@@ -47,7 +49,7 @@ def analyze_article(URLS, driver: webdriver.Chrome):
         # add year info as divider between each table
         writer.writerow([url[43:47]])
         writer.writerow(["Article Name", "Article URL", "Keywords",
-                        "Start Date", "End Date", "All Dates", "Buildings"])
+                        "Start Date", "End Date", "All Dates", "Buildings", "Scores"])
         try:
             # get each article link from article_url_list, no need to click.
             for name, article_url in zip_list:
@@ -64,10 +66,11 @@ def analyze_article(URLS, driver: webdriver.Chrome):
                 endDate = []
                 allDates = []
                 buildings = []
+                scores = []
                 data = []
                 for key in keywords:
-                    # match whole words only from keywords list
-                    if re.search(r'\b' + re.escape(key) + r'\b', name, re.IGNORECASE):
+                    # search article body for keywords
+                    if re.search(r'\b' + re.escape(key) + r'\b', p_text, re.IGNORECASE):
                         print("keyword:", key)
                         print("Article:", name)
                         print("URL", article_url)
@@ -86,8 +89,10 @@ def analyze_article(URLS, driver: webdriver.Chrome):
                         print("All Dates:", allDates)
                         buildings = mentioned_buildings(p_text)
                         print("Building:", buildings)
+                        scores = calculate_score(p_text, scoredict)
+                        print(scores)
                         data = [article_name, articleURL,
-                                keys, startDate, endDate, allDates, buildings]
+                                keys, startDate, endDate, allDates, buildings, scores]
                 if startDate or endDate or allDates:
                     writer.writerow(data)
         # some links are invalid

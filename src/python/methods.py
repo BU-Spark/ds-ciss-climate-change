@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import collections
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -66,6 +67,9 @@ def mentioned_buildings(text):
     return res
 
 
+""" read keywords """
+
+
 def readKeywords():
     # Read the keywords from the CSV file using pandas
     keywords_df = pd.read_csv(
@@ -74,3 +78,49 @@ def readKeywords():
     return keywords
 
 
+""" read article name """
+
+
+def readNames():
+    names_df = pd.read_csv('data/train_data.csv',
+                           usecols=[0], names=['article_name'])
+    names = names_df['article_name'].tolist()
+    url_df = pd.read_csv('data/train_data.csv',
+                         usecols=[1], names=["article_url"])
+    urls = url_df['article_url'].tolist()
+    return names, urls
+
+
+""" assigns a score to each keyword based on number of appearances """
+
+
+def assign_score():
+    # retrieve the keywords/counts and store in a list
+    f = open("data/keywords_filtered.txt")
+    keywords = f.read()
+    f.close()
+    keywords = keywords.split("\n")
+    total_count = 0
+    scores = collections.defaultdict(int)
+    # first pass to get the total count
+    for pair in keywords:
+        keyword = pair[:pair.index(':')]
+        num_appears = pair[pair.index(':')+1:]
+        total_count += int(num_appears)
+    # second pass to calculate the scores
+    for pair in keywords:
+        keyword = pair[:pair.index(':')]
+        num_appears = pair[pair.index(':')+1:]
+        scores[keyword] = int(num_appears)/total_count
+    return scores
+
+
+""" given cleaned text of an article, return a relevancy score """
+
+
+def calculate_score(text: str, score_dict: collections.defaultdict):
+    score = 0
+    text = text.split()
+    for word in text:
+        score += score_dict[word]
+    return score

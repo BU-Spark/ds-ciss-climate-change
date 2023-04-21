@@ -14,6 +14,8 @@ NYCHA_DATA = "data/NYCHA.csv"
 # Read the keywords from the CSV file using pandas
 keywords_df = pd.read_csv('data/keywords.csv', header=None, names=['Keyword'])
 keywords = keywords_df['Keyword'].tolist()
+scoredict = assign_score()
+
 
 """ performs text analysis of given article """
 
@@ -43,11 +45,11 @@ def analyze_article(url, driver: webdriver.Chrome):
 
 
 def exportCSV(url, zip_list, driver: webdriver.Chrome):
-    csvFile = open('press2021-2023.csv', 'wt+')
+    csvFile = open('sample.csv', 'wt+')
     writer = csv.writer(csvFile)
     writer.writerow(["2021-2023 Press Releases"])
     writer.writerow(["Article Name", "Article URL", "Keywords",
-                    "Start Date", "End Date", "All Dates", "Buildings"])
+                    "Start Date", "End Date", "All Dates", "Buildings", "Scores"])
     try:
         # click each article link
         for name, article_url in zip_list:
@@ -66,10 +68,11 @@ def exportCSV(url, zip_list, driver: webdriver.Chrome):
             endDate = []
             allDates = []
             buildings = []
+            scores = []
             data = []
             for key in keywords:
-                # match whole words only from keywords list
-                if re.search(r'\b' + re.escape(key) + r'\b', name, re.IGNORECASE):
+                # search article body for keywords
+                if re.search(r'\b' + re.escape(key) + r'\b', p_text, re.IGNORECASE):
                     print("keyword:", key)
                     print("Article:", name)
                     print("URL", article_url)
@@ -86,8 +89,10 @@ def exportCSV(url, zip_list, driver: webdriver.Chrome):
                     print("All Dates:", allDates)
                     buildings = mentioned_buildings(p_text)
                     print("Building:", buildings)
+                    scores = calculate_score(p_text, scoredict)
+                    print(scores)
                     data = [article_name, articleURL,
-                            keys, startDate, endDate, allDates, buildings]
+                            keys, startDate, endDate, allDates, buildings, scores]
             if startDate or endDate or allDates:
                 writer.writerow(data)
     finally:
