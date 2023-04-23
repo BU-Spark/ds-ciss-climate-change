@@ -101,13 +101,6 @@ def write_results(url,builidings,dates):
 # / ** 
 #       PASS TWO METHODS
 #                          ** /
-""" given cleaned text of an article, return a relevancy score """
-def calculate_score(text:str,score_dict:collections.defaultdict):
-    score = 0
-    text = text.split()
-    for word in text:
-        score += score_dict[word]
-    return score
 
 """ given cleaned text of an article, return a relevancy score """
 def calculate_score(text:str,score_dict:collections.defaultdict):
@@ -116,3 +109,12 @@ def calculate_score(text:str,score_dict:collections.defaultdict):
     for word in text:
         score += score_dict[word]
     return score
+
+# / ** 
+#       MODEL METHODS
+#                       ** /
+
+""" given url, retrieves headline of NYCHA article """
+def get_headline(url):
+    url = url[21:-1].replace('-',' ')
+    return url
