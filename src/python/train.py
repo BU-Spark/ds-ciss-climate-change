@@ -80,6 +80,7 @@ def create_train():
     score_dict = assign_score() # dictionary with structure { keyword: score }
     # stores scores and dates for df modification later
     scores_list = [] 
+    headline_scores_list = []
     buildings_list = []
     start_dates_list = []
     end_dates_list = []
@@ -100,6 +101,9 @@ def create_train():
                 cleaned_text = clean_text(text,stopwords)
                 score = calculate_score(cleaned_text,score_dict)
                 scores_list.append(score)
+                # for adding headline scores to csv
+                headline_score = calculate_score(row[3],score_dict)
+                headline_scores_list.append(headline_score)
                 # for adding buildings to csv
                 buildings_mentioned = mentioned_buildings(text)
                 buildings_list.append(buildings_mentioned)
@@ -111,8 +115,7 @@ def create_train():
     results['end'] = end_dates_list
     results['all dates'] = misc_dates_list
     results['relevance score'] = scores_list
-    results['no. buildings mentioned'] = results.apply(lambda row: len(row['buildings']),axis=1)
+    results['headline relevance score'] = headline_scores_list
+    # results['no. buildings mentioned'] = results.apply(lambda row: len(row['buildings']),axis=1)
     results = results.sort_values(by='relevance score',ascending=False)
     results.to_csv(TRAIN_CREATED)
-
-print(assign_score())

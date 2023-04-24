@@ -1,4 +1,4 @@
-url,text,class
+url,text,class,headline
 https://www.nyc.gov/office-of-the-mayor/news/152-16/mayor-de-blasio-dep-that-all-5-300-buildings-have-discontinued-use-most-polluting,"Mayor de Blasio and DEP Announce That All 5,300 Buildings Have Discontinued Use of Most Polluting Heating Oil, Leading to Significantly Cleaner Air
 February 9, 2016
 
@@ -42,7 +42,7 @@ In addition, in 2015 Mayor de Blasio signed into law the most sweeping update to
 
 Building on the success of NYC Clean Heat and DEP’s heating oil regulations, in September 2015, the City launched the NYC Retrofit Accelerator, a one-stop resource to help owners and operators of privately-owned buildings undertake a range of energy and water efficiency upgrades. The Retrofit Accelerator offers a team of efficiency advisors to provide independent, customized advisory services at no cost to building owners to identify energy and water upgrades and navigate the building retrofit process, including financing and incentive options. The Retrofit Accelerator continues the mission of the NYC Clean Heat program by helping building owners convert off of No. 4 heavy heating oil and is a key component of Mayor de Blasio’s commitment to reduce citywide GHG emissions by 80 percent by 2050 (80x50). The NYC Retrofit Accelerator is expected to reduce citywide GHG emissions by almost one million metric tons and save New Yorkers $350 million in utility costs annually by 2025. 
 
-DEP manages New York City’s water supply, providing more than one billion gallons of water each day to more than nine million residents, including eight million in New York City. The water is delivered from a watershed that extends more than 125 miles from the city, comprising 19 reservoirs and three controlled lakes. Approximately 7,000 miles of water mains, tunnels and aqueducts bring water to homes and businesses throughout the five boroughs, and 7,500 miles of sewer lines and 96 pump stations take wastewater to 14 in-city treatment plants. In addition, DEP has a robust capital program, with a planned $14 billion in investments over the next 10 years that will create up to 3,000 construction-related jobs per year.  This capital program is responsible for critical projects like City Water Tunnel No. 3; the Staten Island Bluebelt program, an ecologically sound and cost-effective stormwater management system; the city’s Watershed Protection Program, which protects sensitive lands upstate near the city’s reservoirs in order to maintain their high water quality; and the installation of more than 820,000 Automated Meter Reading devices, which will allow customers to track their daily water use, more easily manage their accounts and be alerted to potential leaks on their properties. For more information, visit nyc.gov/dep, like us on Facebook at facebook.com/nycwater, or follow us on Twitter at twitter.com/nycwater.",1
+DEP manages New York City’s water supply, providing more than one billion gallons of water each day to more than nine million residents, including eight million in New York City. The water is delivered from a watershed that extends more than 125 miles from the city, comprising 19 reservoirs and three controlled lakes. Approximately 7,000 miles of water mains, tunnels and aqueducts bring water to homes and businesses throughout the five boroughs, and 7,500 miles of sewer lines and 96 pump stations take wastewater to 14 in-city treatment plants. In addition, DEP has a robust capital program, with a planned $14 billion in investments over the next 10 years that will create up to 3,000 construction-related jobs per year.  This capital program is responsible for critical projects like City Water Tunnel No. 3; the Staten Island Bluebelt program, an ecologically sound and cost-effective stormwater management system; the city’s Watershed Protection Program, which protects sensitive lands upstate near the city’s reservoirs in order to maintain their high water quality; and the installation of more than 820,000 Automated Meter Reading devices, which will allow customers to track their daily water use, more easily manage their accounts and be alerted to potential leaks on their properties. For more information, visit nyc.gov/dep, like us on Facebook at facebook.com/nycwater, or follow us on Twitter at twitter.com/nycwater.",1,mayor de blasio dep that all 5 300 buildings have discontinued use most polluting
 https://www.nyc.gov/site/nycha/about/press/pr-2017/nycha-begins-work-on-largest-public-housing-energy-savings-program-in-the-nation-20170406.page,"NYCHA BEGINS WORK ON LARGEST PUBLIC HOUSING ENERGY SAVINGS PROGRAM IN THE NATION
 
 Work is underway on the first phase of a large-scale Energy Performance Contract (EPC), which will reduce annual utility costs by more than $3.5 million and benefit more than 45,000 residents at 16 NYCHA developments citywide.
@@ -115,7 +115,7 @@ Vladeck I
 Vladeck II
 Washington
 Whitman
-Wyckoff Gardens",1
+Wyckoff Gardens",1,nycha begins work on largest public housing energy savings program in the nation
 https://www.nyc.gov/site/nycha/about/press/pr-2017/new-lighting-announcement-20170602.page,"NYCHA Announces Completion of New Lighting at 18 Developments in Brooklyn, Benefitting More Than 36,000 Residents
 
 New, brighter energy-efficient lighting will generate approximately $1.6 million in yearly cost savings for NYCHA.
@@ -164,7 +164,7 @@ Hughes Apartments
 Woodson
 Low Houses
 Glenmore Plaza
-Unity Plaza (Sites 04-27)",1
+Unity Plaza (Sites 04-27)",1,
 https://www.nyc.gov/site/nycha/about/press/pr-2018/pr-20181023.page,"NYCHA ANNOUNCES NEW $104.6 MILLION ENERGY CONTRACT TO IMPROVE EFFICIENCY, HEATING AT 15 DEVELOPMENTS
 
 The $104.6 million project is NYCHA’s fourth since 2015 and the Authority’s largest Energy Performance Contract (EPC) to date. It will upgrade heating, lighting, building ventilation systems, and water conservation at 15 developments comprising 15,000 apartments
@@ -210,7 +210,7 @@ King Towers (Manhattan)
 Grampion (Manhattan)
 Jefferson (Manhattan)
 Corsi Houses (Manhattan)
-335 East 111th Street (Manhattan)",1
+335 East 111th Street (Manhattan)",1,new lighting announcement
 https://betterbuildingssolutioncenter.energy.gov/showcase-projects/new-york-city-housing-authority-344-east-28th-street,"NEW YORK CITY HOUSING AUTHORITY: 344 EAST 28TH STREET
 BACKGROUND
 344 East 28th Street is a 26-story residential building located in Manhattan’s Kips Bay neighborhood. Constructed in 1971, the building has 225 units ranging in size from 1 to 4 bedrooms, and serves 450 low- and extremely-low-income residents. 344 East 28th Street, where the average monthly rent is $442, is a critical affordable housing resource for the Kips Bay neighborhood, where the 2010-2014 median rent was $2,131, and 61.8 percent of low-income families are severely rent-burdened (rents of 50 percent or more of income).
@@ -226,7 +226,7 @@ OTHER BENEFITS
 The ARRA project at 344 East 28th Street stands out among recent energy efficiency projects as much for its surgical targeting of the primary source of energy waste (inefficient domestic hot water) as for NYCHA’s first (and as of 2017, only) deployment of a renewable technology. 
 
 More
-NOTE: The figures below have been adjusted to incorporate New York City factors for consistency with the City's carbon reporting.",1
+NOTE: The figures below have been adjusted to incorporate New York City factors for consistency with the City's carbon reporting.",1,new york city housing authority 344 east 28th street
 http://nychanow.nyc/105-million-in-energy-efficiency-upgrades-coming-to-15-developments/,"$105 Million in Energy-Efficiency Upgrades Coming to 15 Developments
 New hot water system
 An example of a new hot water system.
@@ -266,7 +266,7 @@ Pomonok (Queens)
 Saint Nicholas (Manhattan)
 Soundview (Bronx)
 South Jamaica I (Queens)
-South Jamaica II (Queens)",1
+South Jamaica II (Queens)",1,105 million in energy efficiency upgrades coming to 15 developments
 https://www.nyc.gov/site/nycha/about/press/pr-2012/nycha-begins-69-million-in-capital-improvements-and-renovations.page,"NYCHA Begins $69 Million in Capital Improvements and Renovations
 
 New roofs, brickwork, boiler systems and construction will improve 16 developments that house 36,000 NYCHA residents
@@ -305,7 +305,7 @@ Electrical Service Upgrade at Douglass Houses ($15.9M)
 Replacement of Boilers at Washington Houses ($2.9M)
 Bathroom Renovations at Taft Rehab ($1.2M)
 Replacement of underground steam lines at Riis Houses and Elliot Houses ($11.6M)
-Replacement of Boilers at the Lexington Houses ($1.86M)",1
+Replacement of Boilers at the Lexington Houses ($1.86M)",1,nycha begins 69 million in capital improvements and renovations
 https://www.nyc.gov/site/nycha/about/press/pr-2016/nycha-seeks-a-partner-for-state-of-the-art-microgrid-20160622.page,"NYCHA SEEKS A PARTNER FOR STATE-OF-THE-ART MICROGRID; HEAT & POWER GENERATION SYSTEM AT RED HOOK HOUSES
 
 Authority Releases Request for Proposals for New Resilient, Energy Efficient On-Campus Heat, Power & Delivery System to Serve Nearly 6,300 Residents
@@ -339,7 +339,7 @@ This RFP also builds on the Red Hook Microgrid Feasibility Study commissioned by
 
 “At Red Hook Initiative we are extremely excited about NYCHA's commitment to a cogeneration system and microgrid in the Red Hook Houses,” said Jill Eisenhard, Executive Director of Red Hook Initiative. “This response ensures that residents will be getting the housing infrastructure that they need and deserve and that community needs are being heard. Red Hook will now have the tools and resources necessary for improved resiliency and sustainability. “
 
-A pre-proposal conference will be held on June 29, at 1pm at 250 Broadway, 12th Floor. Proposal submissions will be divided into two parts to provide applicants with sufficient time to develop and elaborate on their proposals. The deadline for submitting Part 1 is July 22 and the deadline for submitting Part 2 is September 9. The full RFP documentation is available on NYCHA’s website.",1
+A pre-proposal conference will be held on June 29, at 1pm at 250 Broadway, 12th Floor. Proposal submissions will be divided into two parts to provide applicants with sufficient time to develop and elaborate on their proposals. The deadline for submitting Part 1 is July 22 and the deadline for submitting Part 2 is September 9. The full RFP documentation is available on NYCHA’s website.",1,nycha seeks a partner for state of the art microgrid
 https://www.nyrealestatelawblog.com/manhattan-litigation-blog/2014/march/chuck-pushed-for-new-boiler-funding/,"SCHUMER, DE BLASIO ANNOUNCE MASSIVE FEDERAL INVESTMENT OF OVER $100M TO REPLACE SANDY- DESTROYED BOILERS FOR MORE THAN 100 NYCHA BUILDINGS – WILL FINALLY PROVIDE TENS OF THOUSANDS WITH RELIABLE HEAT AND HOT WATER
 
 
@@ -372,7 +372,7 @@ The agreement is as follows:
 3. FEMA has agreed to reimburse NYCHA for the cost of the temporary boilers thus far, relieving the cash strapped agency of additional debt.
 4. FEMA will seek to have a funding agreement hammered out and signed early this year, allowing boiler replacement to begin later this year, ahead of the currently projected 2016 start date.
 
-Schumer also previously announced he was pushing New York City’s separate application to FEMA’s Hazard Mitigation Grant program (HMGP). Schumer is pushing for $175 million in federal funding to raise boilers, backup generators and change the way several NYCHA complexes receive their heat and electricity. Schumer today said that he expects NYCHA to receive some type of mitigation funding to raise boilers out of the flood zone.",1
+Schumer also previously announced he was pushing New York City’s separate application to FEMA’s Hazard Mitigation Grant program (HMGP). Schumer is pushing for $175 million in federal funding to raise boilers, backup generators and change the way several NYCHA complexes receive their heat and electricity. Schumer today said that he expects NYCHA to receive some type of mitigation funding to raise boilers out of the flood zone.",1,chuck pushed for new boiler funding
 https://citylimits.org/2019/10/23/climate-control-is-a-year-round-issue-at-nycha-especially-for-seniors/,"A mid-October afternoon at the Castle Hill Senior Center in the Bronx.
 
 As winter approaches, advocates for New York City Housing Authority tenants are fixing their attention on the many boiler repairs that need to be made to prevent the rampant heat outages that plagued 87 percent of its buildings last year.
@@ -447,7 +447,7 @@ NYCHA residents are particularly susceptible to heat. A 2018 report from the NYC
 
 At Castle Hill, Pelayo says she’s trying to be cautiously optimistic that NYCHA’s repairs will hold – she says when housing authority often makes repairs, then neglects maintenance for long stretches.
 
-“Hopefully, next summer we won’t have problems,” she says, “We shall see.”",1
+“Hopefully, next summer we won’t have problems,” she says, “We shall see.”",1,climate control is a year round issue at nycha especially for seniors
 https://www.nyc.gov/office-of-the-mayor/news/043-18/mayor-de-blasio-dedicates-13-million-speed-nycha-response-heat-outages-replace-equipment,"Mayor de Blasio Dedicates $13 Million to Speed NYCHA Response to Heat Outages and Replace Equipment at Hardest-Hit Buildings
 January 18, 2018
 
@@ -469,7 +469,7 @@ Install 7 gas-fired, winterized boilers at Patterson, Independence and Pelham Pa
 Buy 5 New Mobile Boilers to have on-hand to provide emergency heat rapidly following major outages.
 Since 2014, NYCHA has invested nearly $300 million in heating and plumbing, and has received a $109 million grant from FEMA to replace or repair 67 boilers at 17 developments.
 
-The de Blasio Administration has made an unprecedented commitment to preserve and strengthen public housing. Since 2014, the City has invested $1.3 billion to fix nearly 1,000 roofs and $555 million to repair deteriorating exterior brickwork at more 400 buildings. The Mayor also waived both NYCHA’s annual PILOT payment and NYPD payment, relieving NYCHA of nearly $300 million in operating expenses since 2014.",1
+The de Blasio Administration has made an unprecedented commitment to preserve and strengthen public housing. Since 2014, the City has invested $1.3 billion to fix nearly 1,000 roofs and $555 million to repair deteriorating exterior brickwork at more 400 buildings. The Mayor also waived both NYCHA’s annual PILOT payment and NYPD payment, relieving NYCHA of nearly $300 million in operating expenses since 2014.",1,mayor de blasio dedicates 13 million speed nycha response heat outages replace equipment
 https://www.nyc.gov/site/nycha/about/press/pr-2016/NYCHA-Reduces-Energy-Demand-Increases-Efficiency-Through-Collaboration-With-Con-Edison-20160425.page,"NYCHA REDUCES ENERGY DEMAND, INCREASES EFFICIENCY THROUGH COLLABORATION WITH CON EDISON
 
 New Energy-Efficient Valves Reduce Energy Usage, Enhance Comfort
@@ -498,7 +498,7 @@ St. Nicholas Houses
 Carver Houses
 
 Con Edison has an energy efficiency program for almost everyone. For information, visit http://www.coned.com/energyefficiency/, or call the Con Edison energy efficiency team at 1-877-870-6118.
-",1
+",1,NYCHA Reduces Energy Demand Increases Efficiency Through Collaboration With Con Edison
 https://www.nyc.gov/site/nycha/about/press/pr-2017/howard-ave-20170511.page,"NYCHA’S HOWARD AVENUE RECEIVES $1 MILLION ENERGY-EFFICIENCY UPGRADES AS FIRST PROJECT IN PILOT BY NEW YORK STATE WEATHERIZATION ASSISTANCE PROGRAM
 
 State-of-the-art upgrades will improve the quality of life for residents by providing brighter lighting, better ventilation, and more consistent heating.
@@ -528,7 +528,7 @@ NYCHA worked with SPRC, one of a series of citywide nonprofit agencies funded to
 
 The second development to benefit from this program will be Belmont-Sutter Houses in Brooklyn, which will receive WAP upgrades this summer from SPRC. This project is scheduled to be completed by the end of the year. The Authority is also working with six other WAP providers, who are currently conducting energy audits of 18 developments comprising 2,238 apartments to begin work within the year. NYCHA has pre-qualified 8,000-apartments in total at 46 additional developments for future WAP projects.
 
-The WAP program advances the goals outlined in the NextGeneration NYCHA Sustainability Agenda, which details the Authority’s 10-year commitment to improve resident well-being and operate as an effective and efficient landlord. Since the release of the agenda last year, NYCHA has been working with government and private sector partners to provide better service for residents, reduce energy and costs, and curb the effects of climate change. In addition to the WAP program, work is underway to upgrade heating, hot water, interior and exterior lighting, and ventilation systems in buildings across the city through a series of Energy Performance Contracts (EPCs) and other energy programs.",1
+The WAP program advances the goals outlined in the NextGeneration NYCHA Sustainability Agenda, which details the Authority’s 10-year commitment to improve resident well-being and operate as an effective and efficient landlord. Since the release of the agenda last year, NYCHA has been working with government and private sector partners to provide better service for residents, reduce energy and costs, and curb the effects of climate change. In addition to the WAP program, work is underway to upgrade heating, hot water, interior and exterior lighting, and ventilation systems in buildings across the city through a series of Energy Performance Contracts (EPCs) and other energy programs.",1,
 http://nychanow.nyc/boiler-system-upgrades-on-track-for-winter-debut/,"Boiler System Upgrades on Track for Winter Debut
 New heating system upgrades are nearly complete for NYCHA residents living at two Brooklyn developments and one property in Manhattan.  
 
@@ -544,7 +544,7 @@ This work was supported by a combination of City and federal funds. The $13.3 mi
 
 They are among 10 boiler replacement projects that are expected to be conducted across NYCHA’s portfolio through 2023. 
 
-Photo caption: Aerial view of the existing fuel tank and the installed temporary boiler at Robinson Houses in Harlem.",1
+Photo caption: Aerial view of the existing fuel tank and the installed temporary boiler at Robinson Houses in Harlem.",1,boiler system upgrades on track for winter debut
 https://bklyner.com/103-million-nycha-heat-and-efficiency-investment-wont-repair-boilers/,"$103 Million NYCHA Heat and Efficiency Investment Won’t Repair Boilers
 Paul Stremple
 Paul Stremple
@@ -576,7 +576,7 @@ The first is designed to take advantage of the Brooklyn-Queens Demand Management
 
 The Sandy-A EPC of $43 million will be used to expand on work being done to Hurricane Sandy-affected NYCHA sites being repaired with FEMA funds under the NYCHA Sandy Recovery and Resiliency Program. FEMA funding is only used to effect repairs to the level of flooding in a building, explained a NYCHA spokesperson, so the Sandy-A EPC will modernize the building-wide heat distribution systems of the Brooklyn NYCHA developments of Gowanus, Gravesend, Coney Island, Haber and Carey Gardens, along with 11 more sites in Manhattan and Queens.
 
-All of the sites being improved by the Sandy-A EPC are slated to see major Sandy-related repairs to their boilers funded by FEMA, according to the Interactive Sandy Transparency Map. FEMA work at the Gravesend and Carey Gardens sites is still listed as in procurement, while the Coney Island and Haber sites are under construction. The FEMA work is slated to be finished by 2020.",1
+All of the sites being improved by the Sandy-A EPC are slated to see major Sandy-related repairs to their boilers funded by FEMA, according to the Interactive Sandy Transparency Map. FEMA work at the Gravesend and Carey Gardens sites is still listed as in procurement, while the Coney Island and Haber sites are under construction. The FEMA work is slated to be finished by 2020.",1,103 million nycha heat and efficiency investment wont repair boilers
 "https://nychanow.nyc/fence-painting-shows-community-cares/","Fence Painting Shows Community Cares
 fence painters
 Resident Engagement Department Project Coordinator Jacqueline Howard, at left, with members of some of the many community organizations that participated in the event.
@@ -586,7 +586,7 @@ According to NYCHA Project Manager Helga Nyanffor, residents raised the need for
 
 “The best part was how different groups that don’t usually work together all joined in,” said Ms. Nyanffor.
 
-It was a beautiful day in Brownsville, Brooklyn, thanks to support from the event’s sponsor, Healthfirst, and assistance from participants like the Van Dyke Resident Association, the NYPD’s Police Service Area 2, Brownsville Jobs-Plus, Brownsville Multi-Service Family Health Center, the NYC Summer Youth Employment Program, Afropunk, and the Brownsville Community Justice Center. Assemblywoman Latrice Walker and youth from the Seth Low and the Langston Hughes Community Centers also pitched in, with smiles on their faces and some with a whole lot of paint on their pants!",0
+It was a beautiful day in Brownsville, Brooklyn, thanks to support from the event’s sponsor, Healthfirst, and assistance from participants like the Van Dyke Resident Association, the NYPD’s Police Service Area 2, Brownsville Jobs-Plus, Brownsville Multi-Service Family Health Center, the NYC Summer Youth Employment Program, Afropunk, and the Brownsville Community Justice Center. Assemblywoman Latrice Walker and youth from the Seth Low and the Langston Hughes Community Centers also pitched in, with smiles on their faces and some with a whole lot of paint on their pants!",0,fence painting shows community cares
 https://nychanow.nyc/new-b-ball-court-at-ravenswood/,"New B-ball Court at Ravenswood
 The community voted, and Ravenswood Houses won. The development now has a new basketball court thanks to Council Member Jimmy Van Bramer, Participatory Budgeting, and the youth of the development.
 
@@ -598,7 +598,7 @@ Ravenswood Resident Association President Carol Wilkins applauded the efforts of
 
 “The children, at the time of voting, got the neighborhood and the community to come together and vote for the court,” Ms. Wilkins said. “Basketball is another outlet for them; it will give them something to do and it’s something the kids worked for, got, and I’m just so glad it’s done.”
 
-On May 2, Council Member Van Bramer and Ms. Wilkins joined Ravenswood residents for a ribbon-cutting ceremony to celebrate the opening of the new basketball court.",0
+On May 2, Council Member Van Bramer and Ms. Wilkins joined Ravenswood residents for a ribbon-cutting ceremony to celebrate the opening of the new basketball court.",0,new b ball court at ravenswood
 https://nychanow.nyc/nycha-youth-leaders-win-grants/,"NYCHA Youth Leaders Win Grants
 Two of NYCHA’s Youth Leadership Councils (YLC) were recently awarded $1,000 grants to host important projects in their communities.
 
@@ -608,13 +608,13 @@ YLC Zone 5 and YLC Zone 7 received the grants from the Citizens Committee for Ne
 
 “Whenever there’s a grant opportunity, we encourage our YLCs to apply to help them further the great work they are doing in their communities,” said Curtis Williams, Manager in NYCHA’s Resident Engagement Department. “We’re thankful to the Citizens Committee and NYC Service for the funding, and proud of our YLC members. I look forward to seeing how this grant helps them make change in their communities.”
 
-YLC Zone 5, serving Bushwick and Williamsburg, Brooklyn, will host an anti-gun violence rally in April to remember the lives of people who have been hurt or lost due to gun violence. YLC Zone 7, serving Brownsville and East New York, Brooklyn, will use the funds to host up to 10 healthy living workshops, covering exercise and healthy eating to combat childhood obesity. These workshops will lead up to the YLC’s second annual Youth Health and Fitness Fair on April 26.",0
+YLC Zone 5, serving Bushwick and Williamsburg, Brooklyn, will host an anti-gun violence rally in April to remember the lives of people who have been hurt or lost due to gun violence. YLC Zone 7, serving Brownsville and East New York, Brooklyn, will use the funds to host up to 10 healthy living workshops, covering exercise and healthy eating to combat childhood obesity. These workshops will lead up to the YLC’s second annual Youth Health and Fitness Fair on April 26.",0,nycha youth leaders win grants
 https://nychanow.nyc/cold-day-warm-hearts/,"Cold Day, Warm Hearts
 On a sunny, cold early April day, more than 100 people attended a Wellness Fair outside Grant Houses. Organized by the Manhattan North Youth Leadership Council (YLC) in partnership with Moshulu Montefiore Community Center and the Grant Houses Resident Association, the fair featured plenty of activities to keep warm. A “marketplace” of vendors provided information on everything from healthcare coverage options and job training programs to violence prevention. Seniors learned how to juice fresh produce and make healthy smoothies. Teens took part in a fierce basketball tournament and Double Dutch while kids painted their own aprons and played in the sunlight.
 
 “We organized a wellness fair because everyone in the YLC agreed that was something our community needs,” explained Grant Houses resident and YLC member Dayon Corprew, age 16. Kendall Strong, also age 16 and a Grant Houses resident and YLC member, added that “We wanted to get as many people here as possible, so we used social media and put flyers everywhere in the neighborhood. There was a lot of interest, so I think if it were warmer, there’d be a lot more people here.”
 
-YLC Coordinator Amadi Tittle, along with other members of NYCHA’s Resident Engagement Department, were also instrumental in bringing the event to fruition.",0
+YLC Coordinator Amadi Tittle, along with other members of NYCHA’s Resident Engagement Department, were also instrumental in bringing the event to fruition.",0,cold day warm hearts
 https://nychanow.nyc/remembering-robert-white/,"Remembering Robert White
 Robert White
 Robert White introducing Mayor de Blasio at a September 2017 press conference about combating climate change.
@@ -626,7 +626,7 @@ Mr. White joined NYCHA’s Superstorm Sandy Outreach Team in 2014 and quickly es
 
 Mr. White developed lasting friendships wherever he went because he truly cared. He was always willing to listen and lend a helping hand – whether someone needed career advice or film recommendations (he would usually recommend 1980s Eddie Murphy films), Mr. White was always there. His infectious laugh would almost guarantee you walked away with a smile anytime you spoke with him.
 
-Mr. White will truly be missed.",0
+Mr. White will truly be missed.",0,remembering robert white
 https://nychanow.nyc/getting-nycha-residents-registered/,"Getting NYCHA Residents Registered
 NYCHA marked National Voter Registration Day on September 24 by encouraging Bronx residents to register to vote. Working with the Office of the Mayor’s DemocracyNYC initiative and resident associations, NYCHA’s Resident Engagement staff were on site at six developments: Claremont, Webster Houses, Morrisania Air Rights, Moore Houses, Millbrook Houses, and Teller Avenue-East 166th Street with voter registration forms, guides to voting in the city, and other relevant information.
 
@@ -695,7 +695,7 @@ Presidential Primary: April 28, 2020
 Federal and State Primary: June 23, 2020
 
 Check the Board of Elections for upcoming election dates:
-http://www.nyccfb.info/nyc-votes/election-calendar/",0
+http://www.nyccfb.info/nyc-votes/election-calendar/",0,getting nycha residents registered
 "https://nychanow.nyc/coffee-with-the-chair/","Coffee with the Chair
 Chair Shola Olatoye
 During her first year at NYCHA, Chair Shola Olatoye made more than 100 visits with employees at developments and NYCHA offices.
@@ -707,7 +707,7 @@ On the first Friday of every month, small groups of employees may be seen waitin
 
 Chair Olatoye’s private meetings with employees began in June 2014 with a small group that had more than 40 years of experience. Since then, the off-the-record monthly meetings over coffee and breakfast pastries have continued with groups of 20 employees randomly selected from all employees in their seniority group. Not all seniority groups have been called yet, which is why the meetings are continuing this year. Eventually, every employee will receive an invitation to participate and the opportunity to be selected.
 
-“I can’t overstate how valuable these meetings are for me as a chance to hear directly from employees about their work experiences and ideas for how we can improve,” Chair Olatoye said. “Our discussions are candid and everyone knows that  anything said is private. I am grateful for the information that has been shared, which can be a reality check for me.”",0
+“I can’t overstate how valuable these meetings are for me as a chance to hear directly from employees about their work experiences and ideas for how we can improve,” Chair Olatoye said. “Our discussions are candid and everyone knows that  anything said is private. I am grateful for the information that has been shared, which can be a reality check for me.”",0,coffee with the chair
 https://nychanow.nyc/nycha-celebrates-hispanic-heritage/,"NYCHA Celebrates Hispanic Heritage
 Hispanic heritage celebrationNYCHA residents celebrated National Hispanic Heritage Month with an event showcasing the people, history, music, food, dance, and achievements of the Latino community – emphasizing the fact that, regardless of country, todos somos familia(“we are all family”).
 
@@ -717,7 +717,7 @@ In addition to lunch and health services provided by partner organizations, the 
 
 NYCHA residents from Taft Senior Center performed a merengue number that got attendees up and dancing, while Bronx seniors performed a “Heritage Celebration” piece that included dance, song, and a callout of prominent Hispanic people and their achievements. Jazz singer Annette St. John closed the program with “Bésame Mucho” as a tribute to late Cuban singer Celia Cruz.
 
-The event also honored two members of the New York City Police Department, Neighborhood Coordination Officer Fernando Dominquez of Police Service Area 5 and Community Affairs Officer Angelica Delgado, for their service to NYCHA communities.",0
+The event also honored two members of the New York City Police Department, Neighborhood Coordination Officer Fernando Dominquez of Police Service Area 5 and Community Affairs Officer Angelica Delgado, for their service to NYCHA communities.",0,nycha celebrates hispanic heritage
 https://nychanow.nyc/thomas-osei-helps-hometown-kids-in-ghana/,"Thomas Osei Helps Hometown Kids in Ghana
 Housing Assistant Thomas Osei with children in front of a library he raised funds to build in Kumasi, Ghana, so that children could have books and encouragement to succeed in school.
 Housing Assistant Thomas Osei with children in front of a library he raised funds to build in Kumasi, Ghana, so that children could have books and encouragement to succeed in school.
@@ -727,7 +727,7 @@ Without the assistance of a foundation, patron or other funding source, Mr. Osei
 
 When Mr. Osei visited the library last year, he met with young people now attending technical college with the help and encouragement they received from his project. Mr. Osei now wants to provide more school supplies and books for the library, which has become a vital resource in his hometown. This time, he is reaching out for assistance through a new and popular funding source: crowdsourcing.
 
-To find out more or contribute to this project, go to http://gofundme.com/2eybr4ws and put “Thomas Osei” in the search box.",0
+To find out more or contribute to this project, go to http://gofundme.com/2eybr4ws and put “Thomas Osei” in the search box.",0,thomas osei helps hometown kids in ghana
 https://nychanow.nyc/nycha-cuny-scholar-2/,"NYCHA-CUNY Scholar
 Young children often dream of being superheroes like Superman, Batman, or Wonder Woman, but when Mohammed Islam was a child, his superheroes didn’t wear capes, they wore scrubs – they were the doctors and nurses he met accompanying his mother to her medical appointments to act as her translator.
 
@@ -755,7 +755,7 @@ His mission is also to give back on a personal level. Before Morocco, he spent t
 
 With all the activities Mr. Islam is involved in, it’s no wonder that he was one of this year’s winners of the NYCHA-CUNY Scholarship, which provides recipients with $1,000 for education-related expenses. In fact, this is the third time he’s won the award.
 
-What keeps him pursuing his goals, even in the face of obstacles, is something he believes everyone, not just superheroes, can live by: “Dream big, and strive with full effort until your dreams become your reality.”",0
+What keeps him pursuing his goals, even in the face of obstacles, is something he believes everyone, not just superheroes, can live by: “Dream big, and strive with full effort until your dreams become your reality.”",0,nycha cuny scholar 2
 https://nychanow.nyc/reminiscing-through-theatre/,"Reminiscing Through Theatre
 A play written and performed by members of NYCHA’s Sumner Senior Center in Brooklyn showcased the wealth of knowledge and life lessons to be learned from older adults, and how sharing that knowledge enriches both the lives of seniors and their communities.
 
@@ -773,7 +773,7 @@ Inspired by watching her friend Jannie Monroe walk her dog in the mornings, Bess
 
 The workshop was made possible through the SU-CASA community arts initiative, a program of the Brooklyn Arts Councilthat connects older adults with artists to work on art projects.
 
-“I’m very proud and excited to share this play,” Ms. Metelica said. “There were not enough seats for the folks who wanted to see the show. The work that’s being done here at this center is worthwhile, and we need to keep supporting them and this community.” Ms. Metelica and the women hope to perform the play at other senior centers to raise awareness about the importance of senior centers to their communities.",0
+“I’m very proud and excited to share this play,” Ms. Metelica said. “There were not enough seats for the folks who wanted to see the show. The work that’s being done here at this center is worthwhile, and we need to keep supporting them and this community.” Ms. Metelica and the women hope to perform the play at other senior centers to raise awareness about the importance of senior centers to their communities.",0,reminiscing through theatre
 "https://nychanow.nyc/nycha-celebrates-black-history/
 ","NYCHA Celebrates Black History
 
@@ -795,9 +795,9 @@ The elegant event, attended by over 100 employees, featured a delicious soul foo
 
 NYCHA’s Haitian American Employee Association, NAACP branch, and Nigerian Employee Organization staffed tables loaded with information, including a luscious Haitian pumpkin pie recipe.
 
-“This is the kind of event you just can’t miss,” said Nathaniel Williams Jr., Supervisor of Caretakers at Abraham Lincoln Houses, who celebrated his 36th anniversary with NYCHA on February 20. “This event is important for all of us at NYCHA.”",0
+“This is the kind of event you just can’t miss,” said Nathaniel Williams Jr., Supervisor of Caretakers at Abraham Lincoln Houses, who celebrated his 36th anniversary with NYCHA on February 20. “This event is important for all of us at NYCHA.”",0,nycha celebrates black history
 https://nychanow.nyc/snow-day-cleanup/,"Snow Day Cleanup
-NYCHA staff arrived to work at 7 a.m. the morning of the March 21 nor’easter to begin snow removal, keeping our residents safe. Chair and CEO Shola Olatoye checked in with Smith Houses staff and Resident Association President Aixa Torres. Chair Olatoye and General Manager Vito Mustaciuolo also visited Jefferson Houses with Mayor Bill de Blasio and Council Member Diana Ayala.",0
+NYCHA staff arrived to work at 7 a.m. the morning of the March 21 nor’easter to begin snow removal, keeping our residents safe. Chair and CEO Shola Olatoye checked in with Smith Houses staff and Resident Association President Aixa Torres. Chair Olatoye and General Manager Vito Mustaciuolo also visited Jefferson Houses with Mayor Bill de Blasio and Council Member Diana Ayala.",0,snow day cleanup
 https://nychanow.nyc/vibrant-new-mural-for-wald-houses/,"Vibrant New Mural for Wald Houses
 A new mural series at the Lillian Wald Senior Center vividly showcases the rich history and culture of immigrants who shaped the Lower East Side and continue to shape the community.
 
@@ -808,7 +808,7 @@ The murals were painted in June, with the help of more than 100 volunteers, incl
 The five murals are named Alphabet City, Capicu, Coquí, Flor de Maga, and Piraguas. They include colorful depictions of community members playing dominoes and pool, dancing, laughing, enjoying piraguas (Puerto Rican shaved ice), and memories of ancestral homes. One mural includes a portrait of Henry Street Settlement founder Lillian Wald, who the senior center and development are named for.
 
 “Roots/Raíces” was funded by a grant that Thrive Collective received from Council Member Carlina Rivera and SU-CASA/New York City Department of Cultural Affairs, with support from The United Jewish Council of the East Side, which runs the Lillian Wald Senior Center.
-",0
+",0,vibrant new mural for wald houses
 https://nychanow.nyc/rent-collection-training-provides-staff-with-new-tools-and-insights/,"Rent Collection Training Provides Staff with New Tools and Insights
 Deputy General Counsel Sam Mordi describes NYCHA’s rent and fees collection process at a January 12 training session at 90 Church Street. The Law and Management Services Departments coordinated a total of six training sessions for almost 700 Operations employees.
 Deputy General Counsel Sam Mordi describes NYCHA’s rent and fees collection process at a January 12 training session at 90 Church Street. The Law and Management Services Departments coordinated a total of six training sessions for almost 700 Operations employees.
@@ -836,4 +836,4 @@ Property management staff also learned about community- based organizations that
 
 Housing Assistant Denise Parker at Jefferson Houses in Manhattan said, “even though I have been with NYCHA for 29 years, I gained more knowledge about how to handle certain cases in Housing Court and I was also glad to learn that we can contact our Law Department for assistance.”
 
-“It’s good that the training emphasized new ways to help tenants,” said Assistant Property Manager Dorcas Perdue at Carey Gardens in Brooklyn, “like contacting the Social Services Department in HRA or community agencies. We never want to see families lose their homes for not paying rent.”",0
+“It’s good that the training emphasized new ways to help tenants,” said Assistant Property Manager Dorcas Perdue at Carey Gardens in Brooklyn, “like contacting the Social Services Department in HRA or community agencies. We never want to see families lose their homes for not paying rent.”",0,rent collection training provides staff with new tools and insights
