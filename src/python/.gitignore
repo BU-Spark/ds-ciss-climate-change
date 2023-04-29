@@ -1,3 +1,6 @@
-clean.py
-crawl.py
+testNYCHA.py
 install_certifi.py
+NYCHA_format1.csv
+editors_rows.csv
+editors.csv
+__pycache__

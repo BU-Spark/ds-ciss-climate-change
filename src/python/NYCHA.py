@@ -35,6 +35,7 @@ def __main__():
             building_name = soup(driver.page_source, 'html.parser').find('option', {'value': building}).text
             table_demo = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_demographics'})
             table_income = soup(driver.page_source, 'html.parser').find('div', {'id':'tab_household_income'})
+            # handle the exception when there's no development data for the building
             if (not building_name or not table_demo or not table_income):
                 continue
             scrape_table(building_name, table_demo, table_income)
