@@ -16,6 +16,19 @@ File breakdown:
 
     - src/python:
         - NYCHA.py:
-            this file scrapes demographic data for each building from this link: https://my.nycha.info/DevPortal/Home/Index/?redirectUrl=/DevPortal/Portal/DevelopmentData
-        - 
+            this file scrapes demographic data for each building from this link: https://my.nycha.info/DevPortal/Home/Index/?redirectUrl=/DevPortal/Portal/DevelopmentData and writes it into data/NYCHA_BUILDING_DATA.csv
+        - predict.py:
+            this file reads in nycha press releases, trains a classifier model on the data, predicts whether each article is climate-change-related or not, and writes its predictions to data/predictions.csv
+        - runner.py:
+            see comments
+        - scrape.py:
+            does the actual work for NYCHA.py
+        - train.py:
+            all lexical-analysis-related functions
+
+Next Steps:
+
+    - improve the classification model in predict.py by tuning the model, adding more training data, adding more features, etc.
+    - more thorough lexical analysis for improved scores
+    - add to/shorten keyword list
 
