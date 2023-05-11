@@ -12,3 +12,10 @@ Project Setup:
         - sklearn for classification models
         - collections for defaultdict()
 
+File breakdown:
+
+    - src/python:
+        - NYCHA.py:
+            this file scrapes demographic data for each building from this link: https://my.nycha.info/DevPortal/Home/Index/?redirectUrl=/DevPortal/Portal/DevelopmentData
+        - 
+
