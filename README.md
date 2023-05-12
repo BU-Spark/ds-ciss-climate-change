@@ -26,9 +26,9 @@ File breakdown:
         - train.py:
             all lexical-analysis-related functions
 
+
 Next Steps:
 
     - improve the classification model in predict.py by tuning the model, adding more training data, adding more features, etc.
     - more thorough lexical analysis for improved scores
     - add to/shorten keyword list
-

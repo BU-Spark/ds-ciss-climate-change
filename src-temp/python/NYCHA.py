@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 from bs4 import BeautifulSoup as soup
 
+
 NYCHA_URL = "https://my.nycha.info/DevPortal/Portal"
 
 def init():
