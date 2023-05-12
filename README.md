@@ -26,8 +26,9 @@ File breakdown:
         - train.py:
             all lexical-analysis-related functions
 
+
 Next Steps:
 
-    PASS ONE iterates over each article of each NYCHA press release and writes url, buildings mentioned, and dates to csv.
-
-    PASS TWO builds on data obtained in pass one by adding start/end/all dates and relevance score.
+    - improve the classification model in predict.py by tuning the model, adding more training data, adding more features, etc.
+    - more thorough lexical analysis for improved scores
+    - add to/shorten keyword list
