@@ -25,7 +25,21 @@ File breakdown:
             does the actual work for NYCHA.py
         - train.py:
             all lexical-analysis-related functions
-
+            
+   - src/press
+        - methods.py:
+            this file contains all the methods for scraping web press articles and filter keywords. 
+            
+        - NYCHA_press_2010-2020.py: 
+            this file contains the text analysis method for scraping articles from 2010-2020. 
+        - NYCHA_press_2021-2023.py:
+            this file contains the text analysis method for scraping articles from 2021-2023. 
+        - Training.py: 
+            this file contains the text analysis method for scraping and filtering information for the training articles provided by clients. 
+        - URL2csv.py:
+            this file contains a method to convert url list to csv format.
+        - keywords2csv.py:
+            this file contains a method to convert keyword list to csv format. 
 
 Next Steps:
 
